@@ -1,0 +1,48 @@
+name: Update FPL H2H data
+
+on:
+  schedule:
+    # Every 15 minutes — keeps the live gameweek panel near-current during
+    # matches. (Public repos get unlimited Actions minutes, so this is free.
+    # GitHub runs scheduled jobs on a best-effort basis, so refreshes can lag a
+    # few minutes under load.) Dial back to e.g. "0 6,12,18,23 * * *" if you'd
+    # rather it only refreshed a few times a day.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:        # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write           # needed so the job can commit the refreshed data.json
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Build data.json
+        run: python update_data.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "fpl-bot"
+          git config user.email "fpl-bot@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "No change in data.json — nothing to commit."
+          else
+            git commit -m "Update H2H data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi

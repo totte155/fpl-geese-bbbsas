@@ -115,6 +115,18 @@
     font-variant-numeric:tabular-nums; min-width:78px; text-align:center; letter-spacing:.02em}
   .lscore .sep{color:var(--muted); font-weight:600; margin:0 4px}
   .ahead{opacity:1} .behind{opacity:.5}
+  .chev{color:var(--muted); font-size:11px; margin-left:2px; flex:0 0 auto}
+
+  /* Team links (bottom) */
+  .teamlinks{margin-top:30px; border:1px solid var(--line); border-radius:14px;
+    background:var(--panel-2); padding:14px 16px}
+  .teamlinks .tl-head{font-family:var(--display); font-weight:700; font-size:13px;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px}
+  .tl-grid{display:flex; flex-wrap:wrap; gap:8px}
+  .tl-grid a{display:inline-flex; align-items:center; gap:7px; font-size:13px;
+    text-decoration:none; border:1px solid var(--line); border-radius:999px;
+    padding:5px 12px; background:var(--panel); transition:border-color .15s ease}
+  .tl-grid a:hover{border-color:currentColor}
   .live-foot{padding:10px 16px 12px; font-size:12px; color:var(--muted);
     border-top:1px solid var(--line); letter-spacing:.01em}
 
@@ -249,6 +261,8 @@
   <div id="banner"></div>
   <div id="app"><div class="empty"><h3>Loading…</h3><p>Fetching the latest league data.</p></div></div>
 
+  <div class="teamlinks" id="teamlinks"></div>
+
   <footer>
     <div id="rosters"></div>
     <div>Updates automatically each gameweek.</div>
@@ -308,10 +322,24 @@ function render(data){
     || (data.gameweeks.length ? data.gameweeks[data.gameweeks.length-1].gw : 1);
 
   q("#stamp-txt").textContent = fmtStamp(data.generated_at);
+
+  const linkChip = (name, colour) => {
+    const id = (data.entry_ids||{})[name];
+    if(!id) return "";
+    return `<a href="https://fantasy.premierleague.com/en/entry/${id}/event/${refGw}"
+      target="_blank" rel="noopener" style="color:${colour}">
+      <span class="dot" style="background:${colour}"></span>${name}</a>`;
+  };
+  q("#teamlinks").innerHTML =
+    `<div class="tl-head">Open FPL teams · GW ${refGw}</div><div class="tl-grid">`
+    + data.teams.geese.players.map(p=>linkChip(p,"var(--geese)")).join("")
+    + data.teams.bbbsas.players.map(p=>linkChip(p,"var(--bbbsas)")).join("")
+    + `</div>`;
+
   q("#rosters").innerHTML =
-    `<span style="color:var(--geese)">${rosterLinks(data.teams.geese.players, refGw)}</span>`
+    `<span style="color:var(--geese)">${data.teams.geese.players.join(", ")}</span>`
     + " · " +
-    `<span style="color:var(--bbbsas)">${rosterLinks(data.teams.bbbsas.players, refGw)}</span>`;
+    `<span style="color:var(--bbbsas)">${data.teams.bbbsas.players.join(", ")}</span>`;
 
   if(data._sample){
     q("#banner").innerHTML =
@@ -338,13 +366,13 @@ function render(data){
       <div class="duel">
         <div class="side geese">
           <span class="badge"><span class="dot" style="background:var(--geese)"></span>FPL Geese</span>
-          <span class="roster">${rosterLinks(data.teams.geese.players, refGw)}</span>
+          <span class="roster">${data.teams.geese.players.join(" · ")}</span>
           <span class="tally">${g}</span>
           <span class="caplabel">H2H points</span>
         </div>
         <div class="side bbbsas">
           <span class="badge">BBBSAS<span class="dot" style="background:var(--bbbsas)"></span></span>
-          <span class="roster">${rosterLinks(data.teams.bbbsas.players, refGw)}</span>
+          <span class="roster">${data.teams.bbbsas.players.join(" · ")}</span>
           <span class="tally">${b}</span>
           <span class="caplabel">H2H points</span>
         </div>
@@ -361,6 +389,7 @@ function render(data){
         <h3>No completed gameweeks yet</h3>
         <p>Results will appear here after GW1 finishes and every manager's score is in.</p>
       </div>`;
+    bindHandlers();
     return;
   }
 
@@ -377,17 +406,7 @@ function render(data){
          <span class="sub">Tap a card for the four fixtures</span></div>`
     + `<div class="rail" id="rail">${data.gameweeks.map(gwCard.bind(null,data)).join("")}</div>`;
 
-  document.querySelectorAll(".card").forEach(c =>
-    c.addEventListener("click", (e) => {
-      if(e.target.closest("[data-fx]")) return;   // let fixture rows open the modal
-      c.classList.toggle("open");
-    }));
-  document.querySelectorAll("[data-fx]").forEach(el =>
-    el.addEventListener("click", (e) => {
-      e.stopPropagation();
-      if(e.target.closest("a")) return;           // player links still work
-      openFixture(el.getAttribute("data-fx"));
-    }));
+  bindHandlers();
   const rail = q("#rail"); if(rail) rail.scrollLeft = rail.scrollWidth;
 }
 
@@ -410,26 +429,41 @@ function liveBlock(data){
     const bScore = upcoming ? "–" : f.bbbsas_score;
     const key = fxKey(L.gw, f.geese_player, f.bbbsas_player);
     FIXTURE_INDEX[key] = {fixture:f, gw:L.gw};
-    return `<div class="lrow clickable" data-fx="${key}">
+    return `<div class="lrow clickable" data-fx="${key}" title="Tap for captains and differentials">
       <span class="lname g ${gAhead?'ahead':(bAhead?'behind':'')}">
-        <span class="dot" style="background:var(--geese)"></span>${fplLink(f.geese_player, L.gw)}</span>
+        <span class="dot" style="background:var(--geese)"></span>${f.geese_player}</span>
       <span class="lscore"><span class="${gAhead?'ahead':(bAhead?'behind':'')}">${gScore}</span>
         <span class="sep">${EN_DASH}</span>
         <span class="${bAhead?'ahead':(gAhead?'behind':'')}">${bScore}</span></span>
-      <span class="lname b ${bAhead?'ahead':(gAhead?'behind':'')}">${fplLink(f.bbbsas_player, L.gw)}
-        <span class="dot" style="background:var(--bbbsas)"></span></span>
+      <span class="lname b ${bAhead?'ahead':(gAhead?'behind':'')}">${f.bbbsas_player}
+        <span class="dot" style="background:var(--bbbsas)"></span>
+        <span class="chev">›</span></span>
     </div>`;
   }).join("");
 
   const foot = upcoming
     ? `This week's four matchups. Scores appear here live once the gameweek kicks off.`
-    : `Live scores update through the gameweek and don't count towards the table until it's final.`;
+    : `Tap any matchup for captains and differentials. Live scores don't count towards the table until the gameweek is final.`;
 
   return `<div class="live">
     <div class="live-top">${tag}${prov}</div>
     <div class="live-fx">${rows}</div>
     <div class="live-foot">${foot}</div>
   </div>`;
+}
+
+function bindHandlers(){
+  document.querySelectorAll(".card").forEach(c =>
+    c.addEventListener("click", (e) => {
+      if(e.target.closest("[data-fx]")) return;   // let fixture rows open the modal
+      c.classList.toggle("open");
+    }));
+  document.querySelectorAll("[data-fx]").forEach(el =>
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if(e.target.closest("a")) return;           // any links still work
+      openFixture(el.getAttribute("data-fx"));
+    }));
 }
 
 function chart(data){

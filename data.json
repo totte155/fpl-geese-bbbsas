@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T14:58:59+00:00",
+  "generated_at": "2026-08-22T15:19:38+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -50,9 +50,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 25,
+        "geese_score": 28,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 22,
+        "bbbsas_score": 26,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -79,6 +79,15 @@
                 "multiplier": 1
               },
               {
+                "id": 542,
+                "name": "E.Le Fée",
+                "team": "SUN",
+                "pos": "MID",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 427,
                 "name": "Mbeumo",
                 "team": "MUN",
@@ -88,29 +97,11 @@
                 "multiplier": 1
               },
               {
-                "id": 418,
-                "name": "Maguire",
-                "team": "MUN",
-                "pos": "DEF",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 542,
-                "name": "E.Le Fée",
-                "team": "SUN",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 534,
                 "name": "Hume",
                 "team": "SUN",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -118,6 +109,15 @@
                 "id": 305,
                 "name": "Davis",
                 "team": "IPS",
+                "pos": "DEF",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 418,
+                "name": "Maguire",
+                "team": "MUN",
                 "pos": "DEF",
                 "points": 1,
                 "starting": true,
@@ -151,7 +151,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 12
+            "diff_points": 15
           },
           "bbbsas": {
             "captain": {
@@ -175,19 +175,19 @@
                 "multiplier": 1
               },
               {
-                "id": 423,
-                "name": "Shaw",
-                "team": "MUN",
-                "pos": "DEF",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 237,
                 "name": "Ndiaye",
                 "team": "EVE",
                 "pos": "MID",
+                "points": 5,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 423,
+                "name": "Shaw",
+                "team": "MUN",
+                "pos": "DEF",
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
@@ -247,7 +247,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 9
+            "diff_points": 13
           }
         }
       },
@@ -255,7 +255,7 @@
         "geese_player": "Phil",
         "geese_score": 23,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 27,
+        "bbbsas_score": 29,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -364,7 +364,7 @@
                 "name": "Hume",
                 "team": "SUN",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -373,7 +373,7 @@
                 "name": "Greaves",
                 "team": "IPS",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -414,15 +414,15 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 13
+            "diff_points": 15
           }
         }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 18,
+        "geese_score": 17,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 24,
+        "bbbsas_score": 25,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 5,
@@ -453,7 +453,7 @@
                 "name": "Mitchell",
                 "team": "CRY",
                 "pos": "DEF",
-                "points": 1,
+                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -530,7 +530,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 7
+            "diff_points": 6
           },
           "bbbsas": {
             "captain": {
@@ -563,6 +563,15 @@
                 "multiplier": 1
               },
               {
+                "id": 304,
+                "name": "O'Shea",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 418,
                 "name": "Maguire",
                 "team": "MUN",
@@ -575,15 +584,6 @@
                 "id": 469,
                 "name": "N.Williams",
                 "team": "NFO",
-                "pos": "DEF",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 304,
-                "name": "O'Shea",
-                "team": "IPS",
                 "pos": "DEF",
                 "points": 1,
                 "starting": true,
@@ -635,15 +635,15 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 11
+            "diff_points": 12
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 39,
+        "geese_score": 40,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 28,
+        "bbbsas_score": 32,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -679,18 +679,18 @@
                 "multiplier": 1
               },
               {
-                "id": 423,
-                "name": "Shaw",
-                "team": "MUN",
+                "id": 304,
+                "name": "O'Shea",
+                "team": "IPS",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
               {
-                "id": 304,
-                "name": "O'Shea",
-                "team": "IPS",
+                "id": 423,
+                "name": "Shaw",
+                "team": "MUN",
                 "pos": "DEF",
                 "points": 1,
                 "starting": true,
@@ -742,7 +742,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 24
+            "diff_points": 25
           },
           "bbbsas": {
             "captain": {
@@ -775,19 +775,19 @@
                 "multiplier": 1
               },
               {
-                "id": 418,
-                "name": "Maguire",
-                "team": "MUN",
-                "pos": "DEF",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 237,
                 "name": "Ndiaye",
                 "team": "EVE",
                 "pos": "MID",
+                "points": 5,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 418,
+                "name": "Maguire",
+                "team": "MUN",
+                "pos": "DEF",
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
@@ -838,7 +838,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 13
+            "diff_points": 17
           }
         }
       }

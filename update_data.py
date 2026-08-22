@@ -40,13 +40,13 @@ BBBSAS = ["Tommi", "Pat", "Frej", "Tej"]
 # URL /entry/<ID>/event/... is their Entry ID. Leave as 0 to test the pipeline.
 ENTRY_IDS = {
     "Max": 5167402,
-    "Phil": 0,          # >>> still needed <<<
+    "Phil": 3737996,          # >>> still needed <<<
     "Dorian": 1684296,
     "Torsten": 4184094,
     "Tommi": 5204417,
     "Pat": 2816757,
     "Frej": 1004232,
-    "Tej": 0,           # >>> still needed <<<
+    "Tej": 6871385,           # >>> still needed <<<
 }
 
 # The competition runs to this gameweek.

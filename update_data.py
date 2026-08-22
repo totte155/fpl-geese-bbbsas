@@ -40,13 +40,13 @@ BBBSAS = ["Tommi", "Pat", "Frej", "Tej"]
 # URL /entry/<ID>/event/... is their Entry ID. Leave as 0 to test the pipeline.
 ENTRY_IDS = {
     "Max": 5167402,
-    "Phil": 3737996,          # >>> still needed <<<
+    "Phil": 0,          # >>> still needed <<<
     "Dorian": 1684296,
     "Torsten": 4184094,
     "Tommi": 5204417,
     "Pat": 2816757,
     "Frej": 1004232,
-    "Tej": 6871385,           # >>> still needed <<<
+    "Tej": 0,           # >>> still needed <<<
 }
 
 # The competition runs to this gameweek.
@@ -65,16 +65,30 @@ USE_NET_POINTS = True
 #
 # Each tuple is (BBBSAS_player, GEESE_player).
 
+# A full round-robin is four gameweeks: over any four weeks every Geese player
+# faces every BBBSAS player exactly once. We cycle that block five times to
+# fill GW1–GW20, so each of the 16 pairings recurs exactly five times.
+#
+# The rounds are ordered so that Round 4 — the requested finale — lands on
+# GW20 (and also GW4, 8, 12, 16).
+#
+# Each tuple is (BBBSAS_player, GEESE_player).
+
 ROUND_ROBIN = {
-    1: [("Tommi", "Max"),  ("Pat", "Phil"),   ("Frej", "Dorian"),   ("Tej", "Torsten")],
-    2: [("Pat", "Max"),    ("Frej", "Phil"),  ("Tej", "Dorian"),    ("Tommi", "Torsten")],
-    3: [("Frej", "Max"),   ("Tej", "Phil"),   ("Tommi", "Dorian"),  ("Pat", "Torsten")],
-    4: [("Tej", "Max"),    ("Tommi", "Phil"), ("Pat", "Dorian"),    ("Frej", "Torsten")],
+    1: [("Pat", "Max"),   ("Tommi", "Phil"), ("Frej", "Dorian"), ("Tej", "Torsten")],
+    2: [("Frej", "Max"),  ("Tej", "Phil"),   ("Pat", "Dorian"),  ("Tommi", "Torsten")],
+    3: [("Tej", "Max"),   ("Frej", "Phil"),  ("Tommi", "Dorian"), ("Pat", "Torsten")],
+    4: [("Tommi", "Max"), ("Pat", "Phil"),   ("Tej", "Dorian"),  ("Frej", "Torsten")],
 }
 
 # Expand the four base rounds across all gameweeks up to LAST_GAMEWEEK.
+# GAMEWEEK_OVERRIDES can replace the cycled fixtures for a specific gameweek if
+# you ever need a one-off change. Tuples are (BBBSAS_player, GEESE_player).
+GAMEWEEK_OVERRIDES = {}
+
 FINAL_SCHEDULE_BY_NAME = {
-    gw: ROUND_ROBIN[((gw - 1) % 4) + 1] for gw in range(1, LAST_GAMEWEEK + 1)
+    gw: GAMEWEEK_OVERRIDES.get(gw, ROUND_ROBIN[((gw - 1) % 4) + 1])
+    for gw in range(1, LAST_GAMEWEEK + 1)
 }
 
 # ---------------------------------------------------------------------------

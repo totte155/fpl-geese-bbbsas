@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:00:16+00:00",
+  "generated_at": "2026-08-22T07:08:03+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -24,326 +24,51 @@
     }
   },
   "last_gameweek": 20,
-  "completed_count": 7,
+  "completed_count": 0,
   "totals": {
-    "geese": 14,
-    "bbbsas": 13
+    "geese": 0,
+    "bbbsas": 0
   },
   "leader": {
-    "team": "FPL Geese",
-    "margin": 1
+    "team": "Level",
+    "margin": 0
   },
-  "gameweeks": [
-    {
-      "gw": 1,
-      "geese_points": 2,
-      "bbbsas_points": 2,
-      "score": "2–2",
-      "winner": "Draw",
-      "cum_geese": 2,
-      "cum_bbbsas": 2,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 58,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 47,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 63,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 79,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 41,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 42,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 90,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 72,
-          "winner": "FPL Geese"
-        }
-      ]
-    },
-    {
-      "gw": 2,
-      "geese_points": 2,
-      "bbbsas_points": 2,
-      "score": "2–2",
-      "winner": "Draw",
-      "cum_geese": 4,
-      "cum_bbbsas": 4,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 44,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 61,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 75,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 41,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 70,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 51,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 40,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 43,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        }
-      ]
-    },
-    {
-      "gw": 3,
-      "geese_points": 2,
-      "bbbsas_points": 2,
-      "score": "2–2",
-      "winner": "Draw",
-      "cum_geese": 6,
-      "cum_bbbsas": 6,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 65,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 64,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 42,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 53,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 43,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 73,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 65,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 41,
-          "winner": "FPL Geese"
-        }
-      ]
-    },
-    {
-      "gw": 4,
-      "geese_points": 2,
-      "bbbsas_points": 1,
-      "score": "2–1",
-      "winner": "FPL Geese",
-      "cum_geese": 8,
-      "cum_bbbsas": 7,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 90,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 74,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 45,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 52,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 78,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 78,
-          "winner": "Draw"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 75,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 41,
-          "winner": "FPL Geese"
-        }
-      ]
-    },
-    {
-      "gw": 5,
-      "geese_points": 2,
-      "bbbsas_points": 2,
-      "score": "2–2",
-      "winner": "Draw",
-      "cum_geese": 10,
-      "cum_bbbsas": 9,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 74,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 75,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 63,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 41,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 52,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 40,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 73,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 92,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        }
-      ]
-    },
-    {
-      "gw": 6,
-      "geese_points": 3,
-      "bbbsas_points": 1,
-      "score": "3–1",
-      "winner": "FPL Geese",
-      "cum_geese": 13,
-      "cum_bbbsas": 10,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 46,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 56,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 64,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 47,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 72,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 45,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 74,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 57,
-          "winner": "FPL Geese"
-        }
-      ]
-    },
-    {
-      "gw": 7,
-      "geese_points": 1,
-      "bbbsas_points": 3,
-      "score": "1–3",
-      "winner": "Big Ben Brexit Sauce Appreciation Society",
-      "cum_geese": 14,
-      "cum_bbbsas": 13,
-      "fixtures": [
-        {
-          "geese_player": "Max",
-          "geese_score": 73,
-          "bbbsas_player": "Frej",
-          "bbbsas_score": 90,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Phil",
-          "geese_score": 81,
-          "bbbsas_player": "Tej",
-          "bbbsas_score": 49,
-          "winner": "FPL Geese"
-        },
-        {
-          "geese_player": "Dorian",
-          "geese_score": 44,
-          "bbbsas_player": "Tommi",
-          "bbbsas_score": 75,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        },
-        {
-          "geese_player": "Torsten",
-          "geese_score": 74,
-          "bbbsas_player": "Pat",
-          "bbbsas_score": 78,
-          "winner": "Big Ben Brexit Sauce Appreciation Society"
-        }
-      ]
-    }
-  ],
-  "_sample": true,
+  "gameweeks": [],
   "live": {
-    "gw": 8,
+    "gw": 1,
     "status": "live",
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 54,
-        "bbbsas_player": "Tej",
-        "bbbsas_score": 41,
-        "leader": "FPL Geese"
+        "geese_score": 15,
+        "bbbsas_player": "Pat",
+        "bbbsas_score": 15,
+        "leader": "Level"
       },
       {
         "geese_player": "Phil",
-        "geese_score": 38,
+        "geese_score": 15,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 47,
+        "bbbsas_score": 20,
         "leader": "Big Ben Brexit Sauce Appreciation Society"
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 29,
-        "bbbsas_player": "Pat",
-        "bbbsas_score": 29,
+        "geese_score": 15,
+        "bbbsas_player": "Frej",
+        "bbbsas_score": 15,
         "leader": "Level"
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 61,
-        "bbbsas_player": "Frej",
-        "bbbsas_score": 44,
+        "geese_score": 31,
+        "bbbsas_player": "Tej",
+        "bbbsas_score": 20,
         "leader": "FPL Geese"
       }
     ],
-    "provisional_geese": 2,
+    "provisional_geese": 1,
     "provisional_bbbsas": 1,
-    "provisional_score": "2–1"
+    "provisional_score": "1–1"
   }
 }

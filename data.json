@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:57:45+00:00",
+  "generated_at": "2026-08-22T14:16:31+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -50,9 +50,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 22,
+        "geese_score": 26,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 20,
+        "bbbsas_score": 23,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -101,7 +101,25 @@
                 "name": "E.Le Fée",
                 "team": "SUN",
                 "pos": "MID",
-                "points": 0,
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 534,
+                "name": "Hume",
+                "team": "SUN",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 305,
+                "name": "Davis",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -131,27 +149,9 @@
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
-              },
-              {
-                "id": 534,
-                "name": "Hume",
-                "team": "SUN",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 305,
-                "name": "Davis",
-                "team": "IPS",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 9
+            "diff_points": 12
           },
           "bbbsas": {
             "captain": {
@@ -184,6 +184,24 @@
                 "multiplier": 1
               },
               {
+                "id": 237,
+                "name": "Ndiaye",
+                "team": "EVE",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 329,
+                "name": "Rodon",
+                "team": "LEE",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 356,
                 "name": "Virgil",
                 "team": "LIV",
@@ -196,15 +214,6 @@
                 "id": 397,
                 "name": "Semenyo",
                 "team": "MCI",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 237,
-                "name": "Ndiaye",
-                "team": "EVE",
                 "pos": "MID",
                 "points": 0,
                 "starting": true,
@@ -236,26 +245,17 @@
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
-              },
-              {
-                "id": 329,
-                "name": "Rodon",
-                "team": "LEE",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 7
+            "diff_points": 9
           }
         }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 22,
+        "geese_score": 24,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 25,
+        "bbbsas_score": 28,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -286,7 +286,7 @@
                 "name": "Muharemović",
                 "team": "LEE",
                 "pos": "DEF",
-                "points": 0,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -336,7 +336,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 6
+            "diff_points": 7
           },
           "bbbsas": {
             "captain": {
@@ -356,6 +356,24 @@
                 "team": "ARS",
                 "pos": "DEF",
                 "points": 11,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 534,
+                "name": "Hume",
+                "team": "SUN",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 306,
+                "name": "Greaves",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -387,24 +405,6 @@
                 "multiplier": 2
               },
               {
-                "id": 534,
-                "name": "Hume",
-                "team": "SUN",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 306,
-                "name": "Greaves",
-                "team": "IPS",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 127,
                 "name": "Gomez",
                 "team": "BHA",
@@ -414,15 +414,15 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 11
+            "diff_points": 13
           }
         }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 17,
+        "geese_score": 19,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 22,
+        "bbbsas_score": 25,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 5,
@@ -453,7 +453,7 @@
                 "name": "Mitchell",
                 "team": "CRY",
                 "pos": "DEF",
-                "points": 0,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -530,7 +530,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 6
+            "diff_points": 7
           },
           "bbbsas": {
             "captain": {
@@ -572,6 +572,24 @@
                 "multiplier": 1
               },
               {
+                "id": 469,
+                "name": "N.Williams",
+                "team": "NFO",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 304,
+                "name": "O'Shea",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 109,
                 "name": "Verbruggen",
                 "team": "BHA",
@@ -584,15 +602,6 @@
                 "id": 387,
                 "name": "O'Reilly",
                 "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 469,
-                "name": "N.Williams",
-                "team": "NFO",
                 "pos": "DEF",
                 "points": 0,
                 "starting": true,
@@ -624,26 +633,17 @@
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
-              },
-              {
-                "id": 304,
-                "name": "O'Shea",
-                "team": "IPS",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 9
+            "diff_points": 11
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 38,
+        "geese_score": 40,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 27,
+        "bbbsas_score": 28,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -679,9 +679,27 @@
                 "multiplier": 1
               },
               {
+                "id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "pos": "FWD",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 423,
                 "name": "Shaw",
                 "team": "MUN",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 304,
+                "name": "O'Shea",
+                "team": "IPS",
                 "pos": "DEF",
                 "points": 1,
                 "starting": true,
@@ -722,27 +740,9 @@
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 304,
-                "name": "O'Shea",
-                "team": "IPS",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 23
+            "diff_points": 25
           },
           "bbbsas": {
             "captain": {
@@ -788,7 +788,7 @@
                 "name": "Ndiaye",
                 "team": "EVE",
                 "pos": "MID",
-                "points": 0,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -838,7 +838,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 12
+            "diff_points": 13
           }
         }
       }

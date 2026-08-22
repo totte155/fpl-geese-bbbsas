@@ -35,7 +35,23 @@
   .eyebrow{font-family:var(--display); font-weight:600; letter-spacing:.22em;
     text-transform:uppercase; font-size:13px; color:var(--muted)}
   .eyebrow b{color:var(--text); font-weight:700}
-  .stamp{font-size:12px; color:var(--muted); letter-spacing:.02em}
+  .stamp{font-size:12px; color:var(--muted); letter-spacing:.02em;
+    display:inline-flex; align-items:center; gap:10px}
+  .refresh{appearance:none; border:1px solid var(--line); background:var(--panel);
+    color:var(--text); font-family:var(--body); font-size:12px; font-weight:500;
+    padding:5px 11px; border-radius:999px; cursor:pointer; display:inline-flex;
+    align-items:center; gap:6px; transition:border-color .15s ease, background .15s ease}
+  .refresh:hover{border-color:var(--geese); background:#16233a}
+  .refresh:disabled{opacity:.6; cursor:default}
+  .refresh svg{width:13px; height:13px; display:block}
+  .refresh.spin svg{animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* Player links */
+  a.player{color:inherit; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,.28)}
+  a.player:hover{border-bottom-color:currentColor}
+  .roster a.player{color:inherit; border-bottom:none}
+  .roster a.player:hover{text-decoration:underline}
 
   /* Sample banner */
   .banner{margin:8px 2px 0; padding:10px 14px; border:1px solid var(--line);
@@ -102,6 +118,58 @@
   .live-foot{padding:10px 16px 12px; font-size:12px; color:var(--muted);
     border-top:1px solid var(--line); letter-spacing:.01em}
 
+  /* Fixture detail modal */
+  .modal{position:fixed; inset:0; background:rgba(5,9,18,.72); backdrop-filter:blur(3px);
+    display:none; align-items:flex-end; justify-content:center; z-index:50; padding:0}
+  .modal.open{display:flex}
+  .sheet{width:100%; max-width:620px; max-height:88vh; overflow-y:auto;
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:18px 18px 0 0; padding:0 0 22px}
+  @media (min-width:640px){
+    .modal{align-items:center; padding:24px}
+    .sheet{border-radius:18px}
+  }
+  .sheet-top{position:sticky; top:0; background:var(--panel); border-bottom:1px solid var(--line);
+    padding:16px 18px 13px; display:flex; align-items:flex-start; justify-content:space-between; gap:12px}
+  .sheet-title{font-family:var(--display); font-weight:700; font-size:19px; letter-spacing:.01em}
+  .sheet-sub{font-size:12px; color:var(--muted); margin-top:3px}
+  .xbtn{appearance:none; border:1px solid var(--line); background:var(--panel-2);
+    color:var(--text); width:30px; height:30px; border-radius:50%; cursor:pointer;
+    font-size:16px; line-height:1; flex:0 0 auto}
+  .xbtn:hover{border-color:var(--geese)}
+
+  .caps{display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:16px 18px 6px}
+  .cap{border:1px solid var(--line); border-radius:12px; padding:11px 12px; background:var(--panel-2)}
+  .cap .who{font-size:11px; color:var(--muted); letter-spacing:.1em; text-transform:uppercase;
+    font-family:var(--display); font-weight:600}
+  .cap .pl{font-weight:600; font-size:15px; margin-top:3px; display:flex; align-items:center;
+    gap:6px; flex-wrap:wrap}
+  .cap .pts{font-family:var(--display); font-weight:800; font-size:20px; margin-top:2px;
+    font-variant-numeric:tabular-nums}
+  .tagmini{font-size:10px; color:var(--muted); border:1px solid var(--line);
+    padding:1px 5px; border-radius:4px; letter-spacing:.04em}
+  .samecap{margin:8px 18px 0; padding:8px 11px; border-radius:9px; font-size:12.5px;
+    background:rgba(240,180,41,.09); border:1px solid rgba(240,180,41,.28); color:#f4c95d}
+
+  .diffhead{display:flex; align-items:baseline; justify-content:space-between;
+    padding:18px 18px 6px; font-family:var(--display); font-weight:700; font-size:16px}
+  .diffhead .n{font-size:12px; color:var(--muted); font-family:var(--body); font-weight:400}
+  .difflist{padding:0 18px}
+  .drow{display:flex; align-items:center; gap:9px; padding:7px 0; border-bottom:1px solid rgba(34,48,76,.55)}
+  .drow:last-child{border-bottom:none}
+  .drow .pos{font-size:10px; color:var(--muted); width:26px; flex:0 0 auto; letter-spacing:.04em}
+  .drow .nm2{font-size:13.5px; font-weight:500; flex:1; min-width:0; overflow:hidden;
+    text-overflow:ellipsis; white-space:nowrap}
+  .drow .club{font-size:11px; color:var(--muted); flex:0 0 auto}
+  .drow .p{font-family:var(--display); font-weight:700; font-size:15px; min-width:30px;
+    text-align:right; font-variant-numeric:tabular-nums; flex:0 0 auto}
+  .drow.bench{opacity:.45}
+  .drow.bench .nm2::after{content:" (bench)"; font-size:10px; color:var(--muted)}
+  .swing{padding:12px 18px 0; font-size:12.5px; color:var(--muted)}
+  .nodiff{padding:10px 18px; color:var(--muted); font-size:13px}
+  .clickable{cursor:pointer}
+  .lrow.clickable:hover, .fx.clickable:hover{background:rgba(255,255,255,.03)}
+
   /* Section heading */
   .sechead{display:flex; align-items:baseline; gap:12px; margin:34px 4px 12px}
   .sechead h2{font-family:var(--display); font-weight:700; letter-spacing:.02em;
@@ -165,8 +233,17 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow"><b>Geese</b> vs <b>BBBSAS</b> · H2H 2026/27</div>
-    <div class="stamp" id="stamp"></div>
+    <div class="eyebrow"><b>FPL Geese</b> vs <b>BBBSAS</b> · H2H 2026/27</div>
+    <div class="stamp">
+      <span id="stamp-txt"></span>
+      <button class="refresh" id="refresh" title="Fetch the latest saved scores">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/>
+        </svg>
+        <span id="refresh-label">Refresh</span>
+      </button>
+    </div>
   </header>
 
   <div id="banner"></div>
@@ -178,30 +255,63 @@
   </footer>
 </div>
 
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Fixture detail">
+  <div class="sheet" id="sheet"></div>
+</div>
+
 <script>
 const EN_DASH = "\u2013";
 const q = (s) => document.querySelector(s);
 
-function fmtStamp(iso){
+let LAST_DATA = null;
+
+function relTime(iso){
   try{
-    const d = new Date(iso);
-    return "Updated " + d.toLocaleString("en-GB",
-      {day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+    const then = new Date(iso), mins = Math.round((Date.now() - then) / 60000);
+    if(mins < 1) return "Updated just now";
+    if(mins === 1) return "Updated 1 min ago";
+    if(mins < 60) return `Updated ${mins} mins ago`;
+    const hrs = Math.round(mins/60);
+    if(hrs === 1) return "Updated 1 hour ago";
+    if(hrs < 24) return `Updated ${hrs} hours ago`;
+    return "Updated " + then.toLocaleDateString("en-GB",{day:"numeric",month:"short"});
   }catch(e){ return ""; }
 }
 
+// Link a manager's name through to their FPL team for a given gameweek.
+function fplLink(name, gw, cls){
+  const ids = (LAST_DATA && LAST_DATA.entry_ids) || {};
+  const id = ids[name];
+  const safe = String(name);
+  if(!id) return safe;
+  const gwPart = gw ? `/event/${gw}` : "";
+  return `<a class="player ${cls||""}" target="_blank" rel="noopener"
+    href="https://fantasy.premierleague.com/en/entry/${id}${gwPart}"
+    title="Open ${safe}'s FPL team">${safe}</a>`;
+}
+
+function rosterLinks(players, gw){
+  return players.map(p => fplLink(p, gw)).join(" · ");
+}
+
+function fmtStamp(iso){ return relTime(iso); }
+
 function shortName(teamName, data){
-  if(teamName === data.teams.geese.name) return "Geese";
+  if(teamName === data.teams.geese.name) return "FPL Geese";
   if(teamName === data.teams.bbbsas.name) return data.teams.bbbsas.short || "BBBSAS";
   return teamName;
 }
 
 function render(data){
-  q("#stamp").textContent = fmtStamp(data.generated_at);
+  LAST_DATA = data;
+  const refGw = (data.live && data.live.gw)
+    || (data.gameweeks.length ? data.gameweeks[data.gameweeks.length-1].gw : 1);
+
+  q("#stamp-txt").textContent = fmtStamp(data.generated_at);
   q("#rosters").innerHTML =
-    `<span style="color:var(--geese)">${data.teams.geese.players.join(", ")}</span>`
+    `<span style="color:var(--geese)">${rosterLinks(data.teams.geese.players, refGw)}</span>`
     + " · " +
-    `<span style="color:var(--bbbsas)">${data.teams.bbbsas.players.join(", ")}</span>`;
+    `<span style="color:var(--bbbsas)">${rosterLinks(data.teams.bbbsas.players, refGw)}</span>`;
 
   if(data._sample){
     q("#banner").innerHTML =
@@ -227,14 +337,14 @@ function render(data){
     <div class="board">
       <div class="duel">
         <div class="side geese">
-          <span class="badge"><span class="dot" style="background:var(--geese)"></span>Geese</span>
-          <span class="roster">${data.teams.geese.players.join(" · ")}</span>
+          <span class="badge"><span class="dot" style="background:var(--geese)"></span>FPL Geese</span>
+          <span class="roster">${rosterLinks(data.teams.geese.players, refGw)}</span>
           <span class="tally">${g}</span>
           <span class="caplabel">H2H points</span>
         </div>
         <div class="side bbbsas">
           <span class="badge">BBBSAS<span class="dot" style="background:var(--bbbsas)"></span></span>
-          <span class="roster">${data.teams.bbbsas.players.join(" · ")}</span>
+          <span class="roster">${rosterLinks(data.teams.bbbsas.players, refGw)}</span>
           <span class="tally">${b}</span>
           <span class="caplabel">H2H points</span>
         </div>
@@ -259,7 +369,7 @@ function render(data){
          <span class="sub">Cumulative H2H points · ${played} of ${data.last_gameweek} GWs</span></div>`
     + `<div class="chartcard">
          <div class="chart-legend">
-           <span><i style="background:var(--geese)"></i>Geese</span>
+           <span><i style="background:var(--geese)"></i>FPL Geese</span>
            <span><i style="background:var(--bbbsas)"></i>BBBSAS</span>
          </div>${chart(data)}
        </div>`
@@ -268,7 +378,16 @@ function render(data){
     + `<div class="rail" id="rail">${data.gameweeks.map(gwCard.bind(null,data)).join("")}</div>`;
 
   document.querySelectorAll(".card").forEach(c =>
-    c.addEventListener("click", () => c.classList.toggle("open")));
+    c.addEventListener("click", (e) => {
+      if(e.target.closest("[data-fx]")) return;   // let fixture rows open the modal
+      c.classList.toggle("open");
+    }));
+  document.querySelectorAll("[data-fx]").forEach(el =>
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if(e.target.closest("a")) return;           // player links still work
+      openFixture(el.getAttribute("data-fx"));
+    }));
   const rail = q("#rail"); if(rail) rail.scrollLeft = rail.scrollWidth;
 }
 
@@ -289,13 +408,15 @@ function liveBlock(data){
     const bAhead = !upcoming && f.leader === data.teams.bbbsas.name;
     const gScore = upcoming ? "–" : f.geese_score;
     const bScore = upcoming ? "–" : f.bbbsas_score;
-    return `<div class="lrow">
+    const key = fxKey(L.gw, f.geese_player, f.bbbsas_player);
+    FIXTURE_INDEX[key] = {fixture:f, gw:L.gw};
+    return `<div class="lrow clickable" data-fx="${key}">
       <span class="lname g ${gAhead?'ahead':(bAhead?'behind':'')}">
-        <span class="dot" style="background:var(--geese)"></span>${f.geese_player}</span>
+        <span class="dot" style="background:var(--geese)"></span>${fplLink(f.geese_player, L.gw)}</span>
       <span class="lscore"><span class="${gAhead?'ahead':(bAhead?'behind':'')}">${gScore}</span>
         <span class="sep">${EN_DASH}</span>
         <span class="${bAhead?'ahead':(gAhead?'behind':'')}">${bScore}</span></span>
-      <span class="lname b ${bAhead?'ahead':(gAhead?'behind':'')}">${f.bbbsas_player}
+      <span class="lname b ${bAhead?'ahead':(gAhead?'behind':'')}">${fplLink(f.bbbsas_player, L.gw)}
         <span class="dot" style="background:var(--bbbsas)"></span></span>
     </div>`;
   }).join("");
@@ -348,11 +469,13 @@ function gwCard(data, d){
   const geeseWin = d.winner === data.teams.geese.name;
   const bbbsasWin = d.winner === data.teams.bbbsas.name;
   const col = geeseWin ? "var(--geese)" : bbbsasWin ? "var(--bbbsas)" : "var(--draw)";
-  const label = geeseWin ? "Geese" : bbbsasWin ? "BBBSAS" : "Draw";
+  const label = geeseWin ? "FPL Geese" : bbbsasWin ? "BBBSAS" : "Draw";
   const fixtures = d.fixtures.map(f=>{
-    const gw = f.winner === data.teams.geese.name, bw = f.winner === data.teams.bbbsas.name;
-    const scCls = gw ? "g" : bw ? "b" : "d";
-    return `<div class="fx">
+    const gw2 = f.winner === data.teams.geese.name, bw = f.winner === data.teams.bbbsas.name;
+    const scCls = gw2 ? "g" : bw ? "b" : "d";
+    const key = fxKey(d.gw, f.geese_player, f.bbbsas_player);
+    FIXTURE_INDEX[key] = {fixture:f, gw:d.gw};
+    return `<div class="fx clickable" data-fx="${key}">
       <span class="nm" title="${f.geese_player}">${f.geese_player}</span>
       <span class="sc ${scCls}">${f.geese_score}${EN_DASH}${f.bbbsas_score}</span>
       <span class="nm" style="text-align:right" title="${f.bbbsas_player}">${f.bbbsas_player}</span>
@@ -366,15 +489,129 @@ function gwCard(data, d){
   </div>`;
 }
 
-fetch("data.json?" + Date.now())
-  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(render)
-  .catch(err => {
-    q("#app").innerHTML =
-      `<div class="empty"><h3>Couldn't load the league</h3>
-       <p>data.json is missing or unreadable (${err.message}). Once the update job has run
-       at least once, the scores will appear here.</p></div>`;
+// ---- Fixture detail modal -------------------------------------------------
+const FIXTURE_INDEX = {};   // key -> {fixture, gw}
+
+function fxKey(gw, g, b){ return `${gw}|${g}|${b}`; }
+
+function diffRows(list){
+  if(!list || !list.length) return `<div class="nodiff">No differentials — identical squads.</div>`;
+  return `<div class="difflist">` + list.map(p=>`
+    <div class="drow ${p.starting ? "" : "bench"}">
+      <span class="pos">${p.pos||""}</span>
+      <span class="nm2">${p.name}</span>
+      <span class="club">${p.team||""}</span>
+      <span class="p">${p.points}</span>
+    </div>`).join("") + `</div>`;
+}
+
+function capBox(who, cap, colour){
+  if(!cap) return `<div class="cap"><div class="who">${who}</div>
+    <div class="pl" style="color:var(--muted)">Not available</div></div>`;
+  const triple = cap.multiplier > 2 ? `<span class="tagmini">3x</span>` : "";
+  return `<div class="cap">
+    <div class="who">${who} · Captain</div>
+    <div class="pl" style="color:${colour}">${cap.name}
+      <span class="tagmini">${cap.team||""}</span>${triple}</div>
+    <div class="pts" style="color:${colour}">${cap.haul} pts</div>
+  </div>`;
+}
+
+function openFixture(key){
+  const rec = FIXTURE_INDEX[key];
+  if(!rec) return;
+  const {fixture:f, gw} = rec;
+  const d = f.detail;
+  const gCol = "var(--geese)", bCol = "var(--bbbsas)";
+  const gScore = (f.geese_score !== undefined) ? f.geese_score : "–";
+  const bScore = (f.bbbsas_score !== undefined) ? f.bbbsas_score : "–";
+
+  let body;
+  if(!d){
+    body = `<div class="nodiff" style="padding:22px 18px">
+      Squad detail isn't available for this fixture yet. Picks become visible
+      once the gameweek deadline has passed.</div>`;
+  }else{
+    const same = d.same_captain
+      ? `<div class="samecap">Both captained the same player — no captaincy swing.</div>` : "";
+    body = `
+      <div class="caps">
+        ${capBox(f.geese_player, d.geese.captain, gCol)}
+        ${capBox(f.bbbsas_player, d.bbbsas.captain, bCol)}
+      </div>${same}
+      <div class="diffhead" style="color:${gCol}">${f.geese_player} only
+        <span class="n">${d.geese.differentials.length} players · ${d.geese.diff_points} pts</span></div>
+      ${diffRows(d.geese.differentials)}
+      <div class="diffhead" style="color:${bCol}">${f.bbbsas_player} only
+        <span class="n">${d.bbbsas.differentials.length} players · ${d.bbbsas.diff_points} pts</span></div>
+      ${diffRows(d.bbbsas.differentials)}
+      <div class="swing">${d.shared_count} players shared.
+        Differentials are worth <b style="color:${gCol}">${d.geese.diff_points}</b> to
+        ${f.geese_player} and <b style="color:${bCol}">${d.bbbsas.diff_points}</b> to
+        ${f.bbbsas_player}.</div>`;
+  }
+
+  q("#sheet").innerHTML = `
+    <div class="sheet-top">
+      <div>
+        <div class="sheet-title">
+          <span style="color:${gCol}">${f.geese_player}</span>
+          <span style="color:var(--muted)">${gScore} ${EN_DASH} ${bScore}</span>
+          <span style="color:${bCol}">${f.bbbsas_player}</span>
+        </div>
+        <div class="sheet-sub">Gameweek ${gw} · captains and squad differentials</div>
+      </div>
+      <button class="xbtn" id="closeModal" aria-label="Close">&times;</button>
+    </div>${body}`;
+
+  q("#modal").classList.add("open");
+  document.body.style.overflow = "hidden";
+  q("#closeModal").addEventListener("click", closeModal);
+}
+
+function closeModal(){
+  q("#modal").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+q("#modal").addEventListener("click", (e)=>{ if(e.target.id === "modal") closeModal(); });
+document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeModal(); });
+
+function load(){
+  return fetch("data.json?" + Date.now())
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(err => {
+      q("#app").innerHTML =
+        `<div class="empty"><h3>Couldn't load the league</h3>
+         <p>data.json is missing or unreadable (${err.message}). Once the update job has run
+         at least once, the scores will appear here.</p></div>`;
+    });
+}
+
+const btn = q("#refresh"), btnLabel = q("#refresh-label");
+btn.addEventListener("click", () => {
+  btn.disabled = true; btn.classList.add("spin"); btnLabel.textContent = "Refreshing";
+  const started = Date.now();
+  load().finally(() => {
+    // brief minimum spin so the tap registers visually
+    setTimeout(() => {
+      btn.disabled = false; btn.classList.remove("spin"); btnLabel.textContent = "Refresh";
+    }, Math.max(0, 450 - (Date.now() - started)));
   });
+});
+
+// Keep the "x mins ago" honest without re-fetching.
+setInterval(() => {
+  if(LAST_DATA) q("#stamp-txt").textContent = fmtStamp(LAST_DATA.generated_at);
+}, 30000);
+
+// Re-check when the tab regains focus (e.g. coming back mid-match).
+document.addEventListener("visibilitychange", () => {
+  if(document.visibilityState === "visible") load();
+});
+
+load();
 </script>
 </body>
 </html>

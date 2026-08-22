@@ -40,13 +40,13 @@ BBBSAS = ["Tommi", "Pat", "Frej", "Tej"]
 # URL /entry/<ID>/event/... is their Entry ID. Leave as 0 to test the pipeline.
 ENTRY_IDS = {
     "Max": 5167402,
-    "Phil": 3737996,          # >>> still needed <<<
+    "Phil": 3737996,
     "Dorian": 1684296,
     "Torsten": 4184094,
     "Tommi": 5204417,
     "Pat": 2816757,
     "Frej": 1004232,
-    "Tej": 6871385,           # >>> still needed <<<
+    "Tej": 6871385,
 }
 
 # The competition runs to this gameweek.
@@ -145,6 +145,95 @@ def player_points_by_gw(entry_id):
     return out
 
 
+@lru_cache(maxsize=None)
+def element_meta():
+    """element_id -> {name, team, pos} for every Premier League player."""
+    try:
+        data = _get(API_BOOTSTRAP)
+    except Exception:  # noqa: BLE001
+        return {}
+    teams = {t["id"]: t.get("short_name", "") for t in data.get("teams", [])}
+    pos = {t["id"]: t.get("singular_name_short", "")
+           for t in data.get("element_types", [])}
+    out = {}
+    for el in data.get("elements", []):
+        out[el["id"]] = {
+            "name": el.get("web_name", "?"),
+            "team": teams.get(el.get("team"), ""),
+            "pos": pos.get(el.get("element_type"), ""),
+        }
+    return out
+
+
+def manager_squad(entry_id, gw):
+    """List of picks for a manager in a gameweek, or None if unavailable.
+
+    Picks only exist once the gameweek deadline has passed.
+    """
+    if not entry_id:
+        return None
+    try:
+        data = _get(API_PICKS.format(entry_id=entry_id, gw=gw))
+    except Exception:  # noqa: BLE001
+        return None
+    return data.get("picks", [])
+
+
+def _squad_view(picks, live_map, meta):
+    """Turn raw picks into {element: info} plus the captain's details."""
+    squad, captain = {}, None
+    for p in picks or []:
+        eid = p.get("element")
+        info = meta.get(eid, {"name": f"#{eid}", "team": "", "pos": ""})
+        mult = p.get("multiplier", 0)
+        entry = {
+            "id": eid,
+            "name": info["name"],
+            "team": info["team"],
+            "pos": info["pos"],
+            "points": live_map.get(eid, 0),
+            "starting": mult > 0,
+            "multiplier": mult,
+        }
+        squad[eid] = entry
+        if p.get("is_captain"):
+            captain = dict(entry, haul=entry["points"] * max(mult, 1))
+    return squad, captain
+
+
+def fixture_detail(geese_player, bbbsas_player, gw, live_map):
+    """Captain picks and squad differentials for one H2H fixture."""
+    meta = element_meta()
+    if not meta:
+        return None
+    gp = manager_squad(ENTRY_IDS.get(geese_player, 0), gw)
+    bp = manager_squad(ENTRY_IDS.get(bbbsas_player, 0), gw)
+    if gp is None or bp is None:
+        return None
+
+    gsq, gcap = _squad_view(gp, live_map, meta)
+    bsq, bcap = _squad_view(bp, live_map, meta)
+
+    shared = set(gsq) & set(bsq)
+    g_only = [gsq[e] for e in gsq if e not in bsq]
+    b_only = [bsq[e] for e in bsq if e not in gsq]
+
+    # Starters first, then by points scored.
+    sort_key = lambda p: (not p["starting"], -p["points"])  # noqa: E731
+    g_only.sort(key=sort_key)
+    b_only.sort(key=sort_key)
+
+    g_swing = sum(p["points"] * p["multiplier"] for p in g_only)
+    b_swing = sum(p["points"] * p["multiplier"] for p in b_only)
+
+    return {
+        "shared_count": len(shared),
+        "same_captain": bool(gcap and bcap and gcap["id"] == bcap["id"]),
+        "geese": {"captain": gcap, "differentials": g_only, "diff_points": g_swing},
+        "bbbsas": {"captain": bcap, "differentials": b_only, "diff_points": b_swing},
+    }
+
+
 def current_event():
     """The gameweek in progress, or the next one due. Returns (gw, status).
 
@@ -233,6 +322,8 @@ def build_live_block():
         fixtures.append({
             "geese_player": geese_player, "geese_score": gs,
             "bbbsas_player": bbbsas_player, "bbbsas_score": bs, "leader": leader,
+            "detail": fixture_detail(geese_player, bbbsas_player, gw,
+                                     live_map or live_points_map(gw)),
         })
 
     if status == "live" and not any_scores:
@@ -248,11 +339,28 @@ def build_live_block():
     }
 
 
+def previous_detail_cache():
+    """Detail already computed in a past run, so completed gameweeks aren't
+    recalculated (and re-requested) every 15 minutes."""
+    try:
+        with open("data.json", encoding="utf-8") as fh:
+            old = json.load(fh)
+    except Exception:  # noqa: BLE001
+        return {}
+    cache = {}
+    for gwrow in old.get("gameweeks", []):
+        for fx in gwrow.get("fixtures", []):
+            if fx.get("detail"):
+                cache[(gwrow["gw"], fx["geese_player"], fx["bbbsas_player"])] = fx["detail"]
+    return cache
+
+
 # ---------------------------------------------------------------------------
 # 4. H2H CALCULATIONS
 # ---------------------------------------------------------------------------
 
 def build():
+    detail_cache = previous_detail_cache()
     completed = finished_gameweeks()
     scores = {name: player_points_by_gw(ENTRY_IDS.get(name, 0)) for name in ENTRY_IDS}
 
@@ -281,12 +389,18 @@ def build():
                 bbbsas_pts += 1
             else:
                 winner = "Draw"
+            key = (gw, geese_player, bbbsas_player)
+            detail = detail_cache.get(key)
+            if detail is None:
+                detail = fixture_detail(geese_player, bbbsas_player, gw,
+                                        live_points_map(gw))
             fixtures.append({
                 "geese_player": geese_player,
                 "geese_score": gs,
                 "bbbsas_player": bbbsas_player,
                 "bbbsas_score": bs,
                 "winner": winner,
+                "detail": detail,
             })
 
         if geese_pts > bbbsas_pts:
@@ -326,6 +440,7 @@ def build():
                        "colour": TEAM_COLOURS[TEAM_BBBSAS], "players": BBBSAS},
         },
         "last_gameweek": LAST_GAMEWEEK,
+        "entry_ids": {name: eid for name, eid in ENTRY_IDS.items() if eid},
         "completed_count": len(gameweeks),
         "totals": {"geese": cum_geese, "bbbsas": cum_bbbsas},
         "leader": {"team": leader, "margin": margin},

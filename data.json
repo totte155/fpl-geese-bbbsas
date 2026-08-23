@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T15:56:09+00:00",
+  "generated_at": "2026-08-23T16:14:30+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -253,7 +253,7 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 56,
+        "geese_score": 57,
         "bbbsas_player": "Tommi",
         "bbbsas_score": 51,
         "leader": "FPL Geese",
@@ -309,20 +309,20 @@
                 "multiplier": 1
               },
               {
-                "id": 397,
-                "name": "Semenyo",
-                "team": "MCI",
+                "id": 366,
+                "name": "Wirtz",
+                "team": "LIV",
                 "pos": "MID",
                 "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
               {
-                "id": 366,
-                "name": "Wirtz",
-                "team": "LIV",
+                "id": 397,
+                "name": "Semenyo",
+                "team": "MCI",
                 "pos": "MID",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -336,7 +336,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 31
+            "diff_points": 32
           },
           "bbbsas": {
             "captain": {
@@ -422,7 +422,7 @@
         "geese_player": "Dorian",
         "geese_score": 29,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 43,
+        "bbbsas_score": 44,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 5,
@@ -608,6 +608,15 @@
                 "multiplier": 1
               },
               {
+                "id": 366,
+                "name": "Wirtz",
+                "team": "LIV",
+                "pos": "MID",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 418,
                 "name": "Maguire",
                 "team": "MUN",
@@ -624,26 +633,17 @@
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
-              },
-              {
-                "id": 366,
-                "name": "Wirtz",
-                "team": "LIV",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 27
+            "diff_points": 28
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 57,
+        "geese_score": 58,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 39,
+        "bbbsas_score": 40,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,

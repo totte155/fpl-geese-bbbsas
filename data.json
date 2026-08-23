@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:08:02+00:00",
+  "generated_at": "2026-08-23T13:43:35+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -50,9 +50,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 35,
+        "geese_score": 34,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 40,
+        "bbbsas_score": 43,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 6,
@@ -133,15 +133,6 @@
                 "multiplier": 1
               },
               {
-                "id": 124,
-                "name": "Groß",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
@@ -149,9 +140,18 @@
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
+              },
+              {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
               }
             ],
-            "diff_points": 19
+            "diff_points": 18
           },
           "bbbsas": {
             "captain": {
@@ -193,6 +193,15 @@
                 "multiplier": 1
               },
               {
+                "id": 127,
+                "name": "Gomez",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 4,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 423,
                 "name": "Shaw",
                 "team": "MUN",
@@ -205,15 +214,6 @@
                 "id": 397,
                 "name": "Semenyo",
                 "team": "MCI",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 127,
-                "name": "Gomez",
-                "team": "BHA",
                 "pos": "MID",
                 "points": 1,
                 "starting": true,
@@ -247,7 +247,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 24
+            "diff_points": 27
           }
         }
       },
@@ -255,7 +255,7 @@
         "geese_player": "Phil",
         "geese_score": 35,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 37,
+        "bbbsas_score": 39,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -360,6 +360,15 @@
                 "multiplier": 1
               },
               {
+                "id": 127,
+                "name": "Gomez",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 4,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 534,
                 "name": "Hume",
                 "team": "SUN",
@@ -378,15 +387,6 @@
                 "multiplier": 1
               },
               {
-                "id": 124,
-                "name": "Groß",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
@@ -396,15 +396,6 @@
                 "multiplier": 2
               },
               {
-                "id": 127,
-                "name": "Gomez",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 368,
                 "name": "Szoboszlai",
                 "team": "LIV",
@@ -412,15 +403,24 @@
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
+              },
+              {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
               }
             ],
-            "diff_points": 19
+            "diff_points": 21
           }
         }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 24,
+        "geese_score": 23,
         "bbbsas_player": "Frej",
         "bbbsas_score": 34,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
@@ -467,15 +467,6 @@
                 "multiplier": 1
               },
               {
-                "id": 124,
-                "name": "Groß",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
@@ -483,6 +474,15 @@
                 "points": 1,
                 "starting": true,
                 "multiplier": 2
+              },
+              {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
               },
               {
                 "id": 368,
@@ -530,7 +530,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 11
+            "diff_points": 10
           },
           "bbbsas": {
             "captain": {

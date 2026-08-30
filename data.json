@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T16:51:14+00:00",
+  "generated_at": "2026-08-30T19:33:29+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -856,9 +856,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 58,
+        "geese_score": 96,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 52,
+        "bbbsas_score": 90,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 9,
@@ -869,10 +869,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -938,10 +938,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1005,9 +1005,9 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 55,
+        "geese_score": 93,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 72,
+        "bbbsas_score": 110,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 7,
@@ -1018,10 +1018,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1105,10 +1105,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1190,9 +1190,9 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 83,
+        "geese_score": 97,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 61,
+        "bbbsas_score": 90,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -1290,10 +1290,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1328,7 +1328,7 @@
                 "name": "Shaw",
                 "team": "MUN",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -1369,15 +1369,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 21
+            "diff_points": 22
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 48,
+        "geese_score": 86,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 71,
+        "bbbsas_score": 109,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -1388,10 +1388,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1444,7 +1444,7 @@
                 "name": "Shaw",
                 "team": "MUN",
                 "pos": "DEF",
-                "points": 1,
+                "points": 2,
                 "starting": false,
                 "multiplier": 0
               },
@@ -1466,10 +1466,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 9,
+              "points": 23,
               "starting": true,
               "multiplier": 2,
-              "haul": 18
+              "haul": 46
             },
             "differentials": [
               {
@@ -1531,7 +1531,7 @@
                 "name": "Greaves",
                 "team": "IPS",
                 "pos": "DEF",
-                "points": -2,
+                "points": -1,
                 "starting": false,
                 "multiplier": 0
               }

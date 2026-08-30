@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:19:43+00:00",
+  "generated_at": "2026-08-30T01:21:44+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1007,7 +1007,7 @@
         "geese_player": "Phil",
         "geese_score": 23,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 39,
+        "bbbsas_score": 40,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 7,
@@ -1125,7 +1125,7 @@
                 "name": "Wissa",
                 "team": "NEW",
                 "pos": "FWD",
-                "points": 7,
+                "points": 8,
                 "starting": true,
                 "multiplier": 1
               },
@@ -1184,7 +1184,7 @@
                 "multiplier": 1
               }
             ],
-            "diff_points": 27
+            "diff_points": 28
           }
         }
       },

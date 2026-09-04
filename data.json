@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T17:14:28+00:00",
+  "generated_at": "2026-09-04T19:35:59+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1549,43 +1549,787 @@
   ],
   "live": {
     "gw": 3,
-    "status": "upcoming",
+    "status": "live",
     "fixtures": [
       {
         "geese_player": "Max",
         "geese_score": 0,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 0,
-        "leader": "—",
-        "detail": null
+        "bbbsas_score": 1,
+        "leader": "Big Ben Brexit Sauce Appreciation Society",
+        "detail": {
+          "shared_count": 4,
+          "same_captain": true,
+          "geese": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 3,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 87,
+                "name": "Ajer",
+                "team": "BRE",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 398,
+                "name": "Foden",
+                "team": "MCI",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "pos": "FWD",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 496,
+                "name": "Kinsky",
+                "team": "TOT",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 542,
+                "name": "E.Le Fée",
+                "team": "SUN",
+                "pos": "MID",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 534,
+                "name": "Hume",
+                "team": "SUN",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 305,
+                "name": "Davis",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 0
+          },
+          "bbbsas": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 2,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 368,
+                "name": "Szoboszlai",
+                "team": "LIV",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 399,
+                "name": "Cherki",
+                "team": "MCI",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 565,
+                "name": "M.Sangaré",
+                "team": "BRE",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 464,
+                "name": "Wissa",
+                "team": "NEW",
+                "pos": "FWD",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 251,
+                "name": "Lecomte",
+                "team": "FUL",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 1
+          }
+        }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 0,
+        "geese_score": 1,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 0,
-        "leader": "—",
-        "detail": null
+        "bbbsas_score": 1,
+        "leader": "Level",
+        "detail": {
+          "shared_count": 12,
+          "same_captain": true,
+          "geese": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 2,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 334,
+                "name": "Muharemović",
+                "team": "LEE",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 504,
+                "name": "Vuskovic",
+                "team": "BHA",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 0
+          },
+          "bbbsas": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 3,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 469,
+                "name": "N.Williams",
+                "team": "NFO",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 387,
+                "name": "O'Reilly",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 304,
+                "name": "O'Shea",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 0
+          }
+        }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 0,
+        "geese_score": 1,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 0,
-        "leader": "—",
-        "detail": null
+        "bbbsas_score": 1,
+        "leader": "Level",
+        "detail": {
+          "shared_count": 7,
+          "same_captain": true,
+          "geese": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 3,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 173,
+                "name": "Thomas",
+                "team": "COV",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 397,
+                "name": "Semenyo",
+                "team": "MCI",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 111,
+                "name": "Steele",
+                "team": "BHA",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 50,
+                "name": "Burrowes",
+                "team": "AVL",
+                "pos": "MID",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 204,
+                "name": "Mitchell",
+                "team": "CRY",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 0
+          },
+          "bbbsas": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 3,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 109,
+                "name": "Verbruggen",
+                "team": "BHA",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 10,
+                "name": "White",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 418,
+                "name": "Maguire",
+                "team": "MUN",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 496,
+                "name": "Kinsky",
+                "team": "TOT",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 127,
+                "name": "Gomez",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 534,
+                "name": "Hume",
+                "team": "SUN",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 306,
+                "name": "Greaves",
+                "team": "IPS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 0
+          }
+        }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 0,
+        "geese_score": 13,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 0,
-        "leader": "—",
-        "detail": null
+        "bbbsas_score": 1,
+        "leader": "FPL Geese",
+        "detail": {
+          "shared_count": 3,
+          "same_captain": true,
+          "geese": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 2,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 379,
+                "name": "Isak",
+                "team": "LIV",
+                "pos": "FWD",
+                "points": 12,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 366,
+                "name": "Wirtz",
+                "team": "LIV",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 82,
+                "name": "Kelleher",
+                "team": "BRE",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 87,
+                "name": "Ajer",
+                "team": "BRE",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 593,
+                "name": "Dedić",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 397,
+                "name": "Semenyo",
+                "team": "MCI",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 106,
+                "name": "Thiago",
+                "team": "BRE",
+                "pos": "FWD",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 58,
+                "name": "Forster",
+                "team": "BOU",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 36,
+                "name": "Maatsen",
+                "team": "AVL",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 277,
+                "name": "Egan",
+                "team": "HUL",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 290,
+                "name": "Slater",
+                "team": "HUL",
+                "pos": "MID",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 13
+          },
+          "bbbsas": {
+            "captain": {
+              "id": 411,
+              "name": "Haaland",
+              "team": "MCI",
+              "pos": "FWD",
+              "points": 0,
+              "starting": true,
+              "multiplier": 2,
+              "haul": 0
+            },
+            "differentials": [
+              {
+                "id": 368,
+                "name": "Szoboszlai",
+                "team": "LIV",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "pos": "GKP",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 565,
+                "name": "M.Sangaré",
+                "team": "BRE",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 154,
+                "name": "Palmer",
+                "team": "CHE",
+                "pos": "MID",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 464,
+                "name": "Wissa",
+                "team": "NEW",
+                "pos": "FWD",
+                "points": 0,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 623,
+                "name": "Bentley",
+                "team": "COV",
+                "pos": "GKP",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 8,
+                "name": "Calafiori",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 165,
+                "name": "João Pedro",
+                "team": "CHE",
+                "pos": "FWD",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
+              }
+            ],
+            "diff_points": 1
+          }
+        }
       }
     ],
-    "provisional_geese": 0,
-    "provisional_bbbsas": 0,
-    "provisional_score": "0–0"
+    "provisional_geese": 1,
+    "provisional_bbbsas": 1,
+    "provisional_score": "1–1"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T23:31:41+00:00",
+  "generated_at": "2026-09-05T01:23:09+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1876,7 +1876,7 @@
                 "name": "O'Shea",
                 "team": "IPS",
                 "pos": "DEF",
-                "points": 1,
+                "points": 3,
                 "starting": false,
                 "multiplier": 0
               }

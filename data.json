@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T09:40:48+00:00",
+  "generated_at": "2026-09-05T13:01:54+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1555,7 +1555,7 @@
         "geese_player": "Max",
         "geese_score": 0,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 3,
+        "bbbsas_score": 4,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 4,
@@ -1696,6 +1696,15 @@
                 "multiplier": 1
               },
               {
+                "id": 464,
+                "name": "Wissa",
+                "team": "NEW",
+                "pos": "FWD",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 1,
                 "name": "Raya",
                 "team": "ARS",
@@ -1750,28 +1759,19 @@
                 "multiplier": 1
               },
               {
-                "id": 464,
-                "name": "Wissa",
+                "id": 449,
+                "name": "Hall",
                 "team": "NEW",
-                "pos": "FWD",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
+                "pos": "DEF",
+                "points": 4,
+                "starting": false,
+                "multiplier": 0
               },
               {
                 "id": 251,
                 "name": "Lecomte",
                 "team": "FUL",
                 "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 449,
-                "name": "Hall",
-                "team": "NEW",
-                "pos": "DEF",
                 "points": 0,
                 "starting": false,
                 "multiplier": 0
@@ -1786,7 +1786,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 3
+            "diff_points": 4
           }
         }
       },
@@ -2072,9 +2072,9 @@
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 16,
+        "geese_score": 17,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 3,
+        "bbbsas_score": 8,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 3,
@@ -2110,6 +2110,15 @@
                 "multiplier": 1
               },
               {
+                "id": 593,
+                "name": "Dedić",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 82,
                 "name": "Kelleher",
                 "team": "BRE",
@@ -2122,15 +2131,6 @@
                 "id": 87,
                 "name": "Ajer",
                 "team": "BRE",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 593,
-                "name": "Dedić",
-                "team": "NEW",
                 "pos": "DEF",
                 "points": 0,
                 "starting": true,
@@ -2200,7 +2200,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 16
+            "diff_points": 17
           },
           "bbbsas": {
             "captain": {
@@ -2215,11 +2215,29 @@
             },
             "differentials": [
               {
+                "id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 4,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 368,
                 "name": "Szoboszlai",
                 "team": "LIV",
                 "pos": "MID",
                 "points": 3,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 464,
+                "name": "Wissa",
+                "team": "NEW",
+                "pos": "FWD",
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2236,15 +2254,6 @@
                 "id": 391,
                 "name": "Gvardiol",
                 "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 449,
-                "name": "Hall",
-                "team": "NEW",
                 "pos": "DEF",
                 "points": 0,
                 "starting": true,
@@ -2273,15 +2282,6 @@
                 "name": "Palmer",
                 "team": "CHE",
                 "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 464,
-                "name": "Wissa",
-                "team": "NEW",
-                "pos": "FWD",
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
@@ -2323,7 +2323,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 3
+            "diff_points": 8
           }
         }
       }

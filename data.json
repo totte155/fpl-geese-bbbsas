@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T16:01:39+00:00",
+  "generated_at": "2026-09-05T18:14:24+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2164,20 +2164,11 @@
                 "multiplier": 1
               },
               {
-                "id": 58,
-                "name": "Forster",
-                "team": "BOU",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
                 "id": 36,
                 "name": "Maatsen",
                 "team": "AVL",
                 "pos": "DEF",
-                "points": 0,
+                "points": 8,
                 "starting": false,
                 "multiplier": 0
               },
@@ -2186,7 +2177,7 @@
                 "name": "Egan",
                 "team": "HUL",
                 "pos": "DEF",
-                "points": 0,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -2195,6 +2186,15 @@
                 "name": "Slater",
                 "team": "HUL",
                 "pos": "MID",
+                "points": 3,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 58,
+                "name": "Forster",
+                "team": "BOU",
+                "pos": "GKP",
                 "points": 0,
                 "starting": false,
                 "multiplier": 0

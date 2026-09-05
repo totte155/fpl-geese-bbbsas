@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T18:14:24+00:00",
+  "generated_at": "2026-09-05T20:20:58+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1794,7 +1794,7 @@
         "geese_player": "Phil",
         "geese_score": 44,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 47,
+        "bbbsas_score": 48,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 12,
@@ -1858,7 +1858,7 @@
                 "name": "N.Williams",
                 "team": "NFO",
                 "pos": "DEF",
-                "points": 6,
+                "points": 7,
                 "starting": true,
                 "multiplier": 1
               },
@@ -1881,7 +1881,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 6
+            "diff_points": 7
           }
         }
       },
@@ -2168,7 +2168,7 @@
                 "name": "Maatsen",
                 "team": "AVL",
                 "pos": "DEF",
-                "points": 8,
+                "points": 7,
                 "starting": false,
                 "multiplier": 0
               },

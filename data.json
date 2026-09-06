@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T11:19:45+00:00",
+  "generated_at": "2026-09-06T14:16:12+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1553,7 +1553,7 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 43,
+        "geese_score": 53,
         "bbbsas_player": "Tej",
         "bbbsas_score": 38,
         "leader": "FPL Geese",
@@ -1572,6 +1572,15 @@
               "haul": 27
             },
             "differentials": [
+              {
+                "id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 9,
+                "starting": true,
+                "multiplier": 1
+              },
               {
                 "id": 112,
                 "name": "Van Hecke",
@@ -1600,6 +1609,15 @@
                 "multiplier": 1
               },
               {
+                "id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 398,
                 "name": "Foden",
                 "team": "MCI",
@@ -1614,24 +1632,6 @@
                 "team": "LEE",
                 "pos": "FWD",
                 "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 426,
-                "name": "B.Fernandes",
-                "team": "MUN",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 427,
-                "name": "Mbeumo",
-                "team": "MUN",
-                "pos": "MID",
-                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -1672,7 +1672,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 15
+            "diff_points": 25
           },
           "bbbsas": {
             "captain": {
@@ -1792,9 +1792,9 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 44,
+        "geese_score": 53,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 48,
+        "bbbsas_score": 58,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 12,
@@ -1887,9 +1887,9 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 50,
+        "geese_score": 51,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 35,
+        "bbbsas_score": 46,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -1994,6 +1994,15 @@
             },
             "differentials": [
               {
+                "id": 427,
+                "name": "Mbeumo",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 9,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 109,
                 "name": "Verbruggen",
                 "team": "BHA",
@@ -2003,28 +2012,19 @@
                 "multiplier": 1
               },
               {
-                "id": 10,
-                "name": "White",
-                "team": "ARS",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 418,
                 "name": "Maguire",
                 "team": "MUN",
                 "pos": "DEF",
-                "points": 0,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
               {
-                "id": 427,
-                "name": "Mbeumo",
-                "team": "MUN",
-                "pos": "MID",
+                "id": 10,
+                "name": "White",
+                "team": "ARS",
+                "pos": "DEF",
                 "points": 0,
                 "starting": true,
                 "multiplier": 1
@@ -2066,7 +2066,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 3
+            "diff_points": 13
           }
         }
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T17:10:38+00:00",
+  "generated_at": "2026-09-06T19:07:43+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1772,7 +1772,7 @@
                 "name": "Konsa",
                 "team": "ARS",
                 "pos": "DEF",
-                "points": 2,
+                "points": 4,
                 "starting": false,
                 "multiplier": 0
               },
@@ -1956,7 +1956,7 @@
                 "name": "Konsa",
                 "team": "ARS",
                 "pos": "DEF",
-                "points": 2,
+                "points": 4,
                 "starting": false,
                 "multiplier": 0
               },
@@ -2287,17 +2287,17 @@
                 "multiplier": 1
               },
               {
-                "id": 8,
-                "name": "Calafiori",
+                "id": 31,
+                "name": "Konsa",
                 "team": "ARS",
                 "pos": "DEF",
-                "points": 2,
+                "points": 4,
                 "starting": false,
                 "multiplier": 0
               },
               {
-                "id": 31,
-                "name": "Konsa",
+                "id": 8,
+                "name": "Calafiori",
                 "team": "ARS",
                 "pos": "DEF",
                 "points": 2,

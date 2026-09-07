@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T05:12:13+00:00",
+  "generated_at": "2026-09-07T10:14:53+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -1794,7 +1794,7 @@
         "geese_player": "Phil",
         "geese_score": 55,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 59,
+        "bbbsas_score": 61,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 12,
@@ -1863,20 +1863,20 @@
                 "multiplier": 1
               },
               {
-                "id": 387,
-                "name": "O'Reilly",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 304,
                 "name": "O'Shea",
                 "team": "IPS",
                 "pos": "DEF",
                 "points": 3,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 387,
+                "name": "O'Reilly",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 0,
                 "starting": false,
                 "multiplier": 0
               }

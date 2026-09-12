@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T19:16:28+00:00",
+  "generated_at": "2026-09-12T21:30:47+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2340,9 +2340,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 43,
+        "geese_score": 60,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 35,
+        "bbbsas_score": 40,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -2369,11 +2369,11 @@
                 "multiplier": 1
               },
               {
-                "id": 379,
-                "name": "Isak",
-                "team": "LIV",
-                "pos": "FWD",
-                "points": 2,
+                "id": 12,
+                "name": "Saka",
+                "team": "ARS",
+                "pos": "MID",
+                "points": 8,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2382,16 +2382,16 @@
                 "name": "Konsa",
                 "team": "ARS",
                 "pos": "DEF",
-                "points": 1,
+                "points": 6,
                 "starting": true,
                 "multiplier": 1
               },
               {
-                "id": 12,
-                "name": "Saka",
-                "team": "ARS",
-                "pos": "MID",
-                "points": 1,
+                "id": 379,
+                "name": "Isak",
+                "team": "LIV",
+                "pos": "FWD",
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2432,7 +2432,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 12
+            "diff_points": 24
           },
           "bbbsas": {
             "captain": {
@@ -2525,9 +2525,9 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 40,
+        "geese_score": 50,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 41,
+        "bbbsas_score": 64,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
@@ -2572,20 +2572,20 @@
                 "multiplier": 1
               },
               {
+                "id": 15,
+                "name": "Ødegaard",
+                "team": "ARS",
+                "pos": "MID",
+                "points": 3,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
                 "id": 277,
                 "name": "Egan",
                 "team": "HUL",
                 "pos": "DEF",
                 "points": 2,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 15,
-                "name": "Ødegaard",
-                "team": "ARS",
-                "pos": "MID",
-                "points": 1,
                 "starting": false,
                 "multiplier": 0
               },
@@ -2614,20 +2614,20 @@
             },
             "differentials": [
               {
+                "id": 1,
+                "name": "Raya",
+                "team": "ARS",
+                "pos": "GKP",
+                "points": 14,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 368,
                 "name": "Szoboszlai",
                 "team": "LIV",
                 "pos": "MID",
                 "points": 3,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 1,
-                "name": "Raya",
-                "team": "ARS",
-                "pos": "GKP",
-                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2668,15 +2668,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 4
+            "diff_points": 17
           }
         }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 27,
+        "geese_score": 50,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 41,
+        "bbbsas_score": 64,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2841,9 +2841,9 @@
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 30,
+        "geese_score": 37,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 39,
+        "bbbsas_score": 46,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2870,6 +2870,15 @@
                 "multiplier": 2
               },
               {
+                "id": 15,
+                "name": "Ødegaard",
+                "team": "ARS",
+                "pos": "MID",
+                "points": 3,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 379,
                 "name": "Isak",
                 "team": "LIV",
@@ -2883,15 +2892,6 @@
                 "name": "White",
                 "team": "ARS",
                 "pos": "DEF",
-                "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 15,
-                "name": "Ødegaard",
-                "team": "ARS",
-                "pos": "MID",
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
@@ -2924,7 +2924,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 14
+            "diff_points": 16
           },
           "bbbsas": {
             "captain": {
@@ -2948,20 +2948,20 @@
                 "multiplier": 1
               },
               {
+                "id": 557,
+                "name": "Tzolis",
+                "team": "ARS",
+                "pos": "MID",
+                "points": 3,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 469,
                 "name": "N.Williams",
                 "team": "NFO",
                 "pos": "DEF",
                 "points": 2,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 557,
-                "name": "Tzolis",
-                "team": "ARS",
-                "pos": "MID",
-                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3002,7 +3002,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 11
+            "diff_points": 13
           }
         }
       }

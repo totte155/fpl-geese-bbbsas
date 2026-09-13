@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T18:12:31+00:00",
+  "generated_at": "2026-09-13T20:48:02+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2342,7 +2342,7 @@
         "geese_player": "Max",
         "geese_score": 81,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 69,
+        "bbbsas_score": 70,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -2451,7 +2451,7 @@
                 "name": "Haaland",
                 "team": "MCI",
                 "pos": "FWD",
-                "points": 8,
+                "points": 9,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2519,15 +2519,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 12
+            "diff_points": 13
           }
         }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 76,
+        "geese_score": 77,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 100,
+        "bbbsas_score": 101,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
@@ -2674,9 +2674,9 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 85,
+        "geese_score": 87,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 100,
+        "bbbsas_score": 101,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2687,10 +2687,10 @@
               "name": "Haaland",
               "team": "MCI",
               "pos": "FWD",
-              "points": 8,
+              "points": 9,
               "starting": true,
               "multiplier": 2,
-              "haul": 16
+              "haul": 18
             },
             "differentials": [
               {
@@ -2843,7 +2843,7 @@
         "geese_player": "Torsten",
         "geese_score": 58,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 83,
+        "bbbsas_score": 84,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2948,19 +2948,19 @@
                 "multiplier": 1
               },
               {
-                "id": 40,
-                "name": "Rogers",
-                "team": "CHE",
-                "pos": "MID",
-                "points": 8,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
                 "pos": "FWD",
+                "points": 9,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "pos": "MID",
                 "points": 8,
                 "starting": true,
                 "multiplier": 1
@@ -3002,7 +3002,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 39
+            "diff_points": 40
           }
         }
       }

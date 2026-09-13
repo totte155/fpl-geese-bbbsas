@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T11:45:17+00:00",
+  "generated_at": "2026-09-13T15:14:08+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2340,9 +2340,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 60,
+        "geese_score": 79,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 40,
+        "bbbsas_score": 59,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -2492,20 +2492,20 @@
                 "multiplier": 0
               },
               {
+                "id": 127,
+                "name": "Gomez",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 3,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
                 "id": 306,
                 "name": "Greaves",
                 "team": "IPS",
                 "pos": "DEF",
                 "points": 1,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 127,
-                "name": "Gomez",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 0,
                 "starting": false,
                 "multiplier": 0
               },
@@ -2525,9 +2525,9 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 50,
+        "geese_score": 61,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 64,
+        "bbbsas_score": 92,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
@@ -2614,6 +2614,15 @@
             },
             "differentials": [
               {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 17,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 1,
                 "name": "Raya",
                 "team": "ARS",
@@ -2628,15 +2637,6 @@
                 "team": "LIV",
                 "pos": "MID",
                 "points": 3,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 124,
-                "name": "Groß",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2668,15 +2668,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 17
+            "diff_points": 34
           }
         }
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 50,
+        "geese_score": 67,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 64,
+        "bbbsas_score": 92,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2772,6 +2772,15 @@
             },
             "differentials": [
               {
+                "id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "pos": "DEF",
+                "points": 11,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 154,
                 "name": "Palmer",
                 "team": "CHE",
@@ -2779,15 +2788,6 @@
                 "points": 5,
                 "starting": true,
                 "multiplier": 3
-              },
-              {
-                "id": 115,
-                "name": "De Cuyper",
-                "team": "BHA",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
               },
               {
                 "id": 464,
@@ -2835,15 +2835,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 15
+            "diff_points": 26
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 37,
+        "geese_score": 56,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 46,
+        "bbbsas_score": 71,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2860,6 +2860,15 @@
               "haul": 10
             },
             "differentials": [
+              {
+                "id": 115,
+                "name": "De Cuyper",
+                "team": "BHA",
+                "pos": "DEF",
+                "points": 11,
+                "starting": true,
+                "multiplier": 1
+              },
               {
                 "id": 154,
                 "name": "Palmer",
@@ -2897,15 +2906,6 @@
                 "multiplier": 1
               },
               {
-                "id": 115,
-                "name": "De Cuyper",
-                "team": "BHA",
-                "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 426,
                 "name": "B.Fernandes",
                 "team": "MUN",
@@ -2924,7 +2924,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 16
+            "diff_points": 27
           },
           "bbbsas": {
             "captain": {
@@ -2938,6 +2938,15 @@
               "haul": 24
             },
             "differentials": [
+              {
+                "id": 124,
+                "name": "Groß",
+                "team": "BHA",
+                "pos": "MID",
+                "points": 17,
+                "starting": true,
+                "multiplier": 1
+              },
               {
                 "id": 40,
                 "name": "Rogers",
@@ -2975,15 +2984,6 @@
                 "multiplier": 1
               },
               {
-                "id": 124,
-                "name": "Groß",
-                "team": "BHA",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
@@ -3002,7 +3002,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 13
+            "diff_points": 30
           }
         }
       }

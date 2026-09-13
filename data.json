@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T15:14:08+00:00",
+  "generated_at": "2026-09-13T18:12:31+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2340,9 +2340,9 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 79,
+        "geese_score": 81,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 59,
+        "bbbsas_score": 69,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -2447,6 +2447,15 @@
             },
             "differentials": [
               {
+                "id": 411,
+                "name": "Haaland",
+                "team": "MCI",
+                "pos": "FWD",
+                "points": 8,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 368,
                 "name": "Szoboszlai",
                 "team": "LIV",
@@ -2468,15 +2477,6 @@
                 "id": 346,
                 "name": "Calvert-Lewin",
                 "team": "LEE",
-                "pos": "FWD",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 411,
-                "name": "Haaland",
-                "team": "MCI",
                 "pos": "FWD",
                 "points": 0,
                 "starting": true,
@@ -2519,15 +2519,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 4
+            "diff_points": 12
           }
         }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 61,
+        "geese_score": 76,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 92,
+        "bbbsas_score": 100,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
@@ -2558,7 +2558,7 @@
                 "name": "Donnarumma",
                 "team": "MCI",
                 "pos": "GKP",
-                "points": 0,
+                "points": 7,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2599,7 +2599,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 8
+            "diff_points": 15
           },
           "bbbsas": {
             "captain": {
@@ -2641,6 +2641,15 @@
                 "multiplier": 1
               },
               {
+                "id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 11,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
                 "id": 565,
                 "name": "M.Sangaré",
                 "team": "BRE",
@@ -2657,15 +2666,6 @@
                 "points": 0,
                 "starting": false,
                 "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
             "diff_points": 34
@@ -2674,9 +2674,9 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 67,
+        "geese_score": 85,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 92,
+        "bbbsas_score": 100,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2687,27 +2687,27 @@
               "name": "Haaland",
               "team": "MCI",
               "pos": "FWD",
-              "points": 0,
+              "points": 8,
               "starting": true,
               "multiplier": 2,
-              "haul": 0
+              "haul": 16
             },
             "differentials": [
+              {
+                "id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
               {
                 "id": 204,
                 "name": "Mitchell",
                 "team": "CRY",
                 "pos": "DEF",
                 "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 426,
-                "name": "B.Fernandes",
-                "team": "MUN",
-                "pos": "MID",
-                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2757,7 +2757,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 1
+            "diff_points": 3
           },
           "bbbsas": {
             "captain": {
@@ -2799,6 +2799,15 @@
                 "multiplier": 1
               },
               {
+                "id": 391,
+                "name": "Gvardiol",
+                "team": "MCI",
+                "pos": "DEF",
+                "points": 11,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
                 "id": 565,
                 "name": "M.Sangaré",
                 "team": "BRE",
@@ -2824,15 +2833,6 @@
                 "points": 0,
                 "starting": false,
                 "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
             "diff_points": 26
@@ -2841,9 +2841,9 @@
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 56,
+        "geese_score": 58,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 71,
+        "bbbsas_score": 83,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2888,6 +2888,15 @@
                 "multiplier": 1
               },
               {
+                "id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 379,
                 "name": "Isak",
                 "team": "LIV",
@@ -2906,15 +2915,6 @@
                 "multiplier": 1
               },
               {
-                "id": 426,
-                "name": "B.Fernandes",
-                "team": "MUN",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 423,
                 "name": "Shaw",
                 "team": "MUN",
@@ -2924,7 +2924,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 27
+            "diff_points": 29
           },
           "bbbsas": {
             "captain": {
@@ -2957,6 +2957,15 @@
                 "multiplier": 1
               },
               {
+                "id": 411,
+                "name": "Haaland",
+                "team": "MCI",
+                "pos": "FWD",
+                "points": 8,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 557,
                 "name": "Tzolis",
                 "team": "ARS",
@@ -2979,16 +2988,7 @@
                 "name": "O'Reilly",
                 "team": "MCI",
                 "pos": "DEF",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 411,
-                "name": "Haaland",
-                "team": "MCI",
-                "pos": "FWD",
-                "points": 0,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2997,12 +2997,12 @@
                 "name": "Maguire",
                 "team": "MUN",
                 "pos": "DEF",
-                "points": 0,
+                "points": 1,
                 "starting": false,
                 "multiplier": 0
               }
             ],
-            "diff_points": 30
+            "diff_points": 39
           }
         }
       }

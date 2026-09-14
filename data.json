@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T16:32:53+00:00",
+  "generated_at": "2026-09-14T20:32:38+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2342,7 +2342,7 @@
         "geese_player": "Max",
         "geese_score": 81,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 70,
+        "bbbsas_score": 79,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 7,
@@ -2447,6 +2447,15 @@
             },
             "differentials": [
               {
+                "id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "pos": "FWD",
+                "points": 9,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 411,
                 "name": "Haaland",
                 "team": "MCI",
@@ -2470,15 +2479,6 @@
                 "team": "ARS",
                 "pos": "DEF",
                 "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2519,15 +2519,15 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 13
+            "diff_points": 22
           }
         }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 77,
+        "geese_score": 79,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 101,
+        "bbbsas_score": 103,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
@@ -2674,9 +2674,9 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 87,
+        "geese_score": 96,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 101,
+        "bbbsas_score": 103,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 8,
@@ -2694,6 +2694,15 @@
             },
             "differentials": [
               {
+                "id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "pos": "FWD",
+                "points": 9,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 426,
                 "name": "B.Fernandes",
                 "team": "MUN",
@@ -2708,15 +2717,6 @@
                 "team": "CRY",
                 "pos": "DEF",
                 "points": 1,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 0,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2757,7 +2757,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 3
+            "diff_points": 12
           },
           "bbbsas": {
             "captain": {
@@ -2794,7 +2794,7 @@
                 "name": "Wissa",
                 "team": "NEW",
                 "pos": "FWD",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -2835,13 +2835,13 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 26
+            "diff_points": 28
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 58,
+        "geese_score": 67,
         "bbbsas_player": "Frej",
         "bbbsas_score": 84,
         "leader": "Big Ben Brexit Sauce Appreciation Society",

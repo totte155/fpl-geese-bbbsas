@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T06:40:49+00:00",
+  "generated_at": "2026-09-15T12:06:28+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -2525,7 +2525,7 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 79,
+        "geese_score": 82,
         "bbbsas_player": "Pat",
         "bbbsas_score": 103,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
@@ -2563,22 +2563,13 @@
                 "multiplier": 1
               },
               {
-                "id": 454,
-                "name": "Elanga",
-                "team": "NEW",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 15,
                 "name": "Ødegaard",
                 "team": "ARS",
                 "pos": "MID",
                 "points": 3,
-                "starting": false,
-                "multiplier": 0
+                "starting": true,
+                "multiplier": 1
               },
               {
                 "id": 277,
@@ -2597,9 +2588,18 @@
                 "points": 0,
                 "starting": false,
                 "multiplier": 0
+              },
+              {
+                "id": 454,
+                "name": "Elanga",
+                "team": "NEW",
+                "pos": "MID",
+                "points": 0,
+                "starting": false,
+                "multiplier": 0
               }
             ],
-            "diff_points": 15
+            "diff_points": 18
           },
           "bbbsas": {
             "captain": {

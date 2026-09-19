@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T18:40:02+00:00",
+  "generated_at": "2026-09-19T20:59:13+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3021,7 +3021,7 @@
         "geese_player": "Max",
         "geese_score": 35,
         "bbbsas_player": "Pat",
-        "bbbsas_score": 18,
+        "bbbsas_score": 19,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 4,
@@ -3115,7 +3115,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 7,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3157,7 +3157,7 @@
                 "name": "Hall",
                 "team": "NEW",
                 "pos": "DEF",
-                "points": 12,
+                "points": 13,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3229,7 +3229,7 @@
                 "name": "De Cuyper",
                 "team": "BHA",
                 "pos": "DEF",
-                "points": 5,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3252,13 +3252,13 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 17
+            "diff_points": 18
           }
         }
       },
       {
         "geese_player": "Phil",
-        "geese_score": 22,
+        "geese_score": 23,
         "bbbsas_player": "Tommi",
         "bbbsas_score": 8,
         "leader": "FPL Geese",
@@ -3282,7 +3282,7 @@
                 "name": "Hall",
                 "team": "NEW",
                 "pos": "DEF",
-                "points": 12,
+                "points": 13,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3327,7 +3327,7 @@
                 "name": "De Cuyper",
                 "team": "BHA",
                 "pos": "DEF",
-                "points": 5,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3359,7 +3359,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 16
+            "diff_points": 17
           },
           "bbbsas": {
             "captain": {
@@ -3432,7 +3432,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 7,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3626,7 +3626,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 7,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3666,8 +3666,8 @@
         "geese_player": "Torsten",
         "geese_score": 18,
         "bbbsas_player": "Tej",
-        "bbbsas_score": 18,
-        "leader": "Level",
+        "bbbsas_score": 19,
+        "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 9,
           "same_captain": true,
@@ -3724,7 +3724,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 7,
+                "points": 6,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3757,7 +3757,7 @@
                 "name": "Hall",
                 "team": "NEW",
                 "pos": "DEF",
-                "points": 12,
+                "points": 13,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3807,13 +3807,13 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 13
+            "diff_points": 14
           }
         }
       }
     ],
     "provisional_geese": 3,
-    "provisional_bbbsas": 0,
-    "provisional_score": "3–0"
+    "provisional_bbbsas": 1,
+    "provisional_score": "3–1"
   }
 }

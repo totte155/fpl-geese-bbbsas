@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T16:25:42+00:00",
+  "generated_at": "2026-09-19T18:40:02+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3115,7 +3115,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 6,
+                "points": 7,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3258,9 +3258,9 @@
       },
       {
         "geese_player": "Phil",
-        "geese_score": 20,
+        "geese_score": 22,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 6,
+        "bbbsas_score": 8,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -3432,7 +3432,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 6,
+                "points": 7,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3463,7 +3463,7 @@
         "geese_player": "Dorian",
         "geese_score": 25,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 19,
+        "bbbsas_score": 21,
         "leader": "FPL Geese",
         "detail": {
           "shared_count": 6,
@@ -3526,6 +3526,15 @@
                 "multiplier": 1
               },
               {
+                "id": 173,
+                "name": "Thomas",
+                "team": "COV",
+                "pos": "DEF",
+                "points": 9,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
                 "id": 111,
                 "name": "Steele",
                 "team": "BHA",
@@ -3548,15 +3557,6 @@
                 "name": "Burrowes",
                 "team": "AVL",
                 "pos": "MID",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 173,
-                "name": "Thomas",
-                "team": "COV",
-                "pos": "DEF",
                 "points": 0,
                 "starting": false,
                 "multiplier": 0
@@ -3590,7 +3590,7 @@
                 "name": "N.Williams",
                 "team": "NFO",
                 "pos": "DEF",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3626,7 +3626,7 @@
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 6,
+                "points": 7,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3658,16 +3658,16 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 2
+            "diff_points": 4
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 16,
+        "geese_score": 18,
         "bbbsas_player": "Tej",
         "bbbsas_score": 18,
-        "leader": "Big Ben Brexit Sauce Appreciation Society",
+        "leader": "Level",
         "detail": {
           "shared_count": 9,
           "same_captain": true,
@@ -3702,6 +3702,15 @@
                 "multiplier": 1
               },
               {
+                "id": 480,
+                "name": "Gibbs-White",
+                "team": "NFO",
+                "pos": "MID",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 15,
                 "name": "Ødegaard",
                 "team": "ARS",
@@ -3711,20 +3720,11 @@
                 "multiplier": 1
               },
               {
-                "id": 480,
-                "name": "Gibbs-White",
-                "team": "NFO",
-                "pos": "MID",
-                "points": 0,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
                 "id": 109,
                 "name": "Verbruggen",
                 "team": "BHA",
                 "pos": "GKP",
-                "points": 6,
+                "points": 7,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3738,7 +3738,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 10
+            "diff_points": 12
           },
           "bbbsas": {
             "captain": {
@@ -3813,7 +3813,7 @@
       }
     ],
     "provisional_geese": 3,
-    "provisional_bbbsas": 1,
-    "provisional_score": "3–1"
+    "provisional_bbbsas": 0,
+    "provisional_score": "3–0"
   }
 }

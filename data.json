@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T09:02:55+00:00",
+  "generated_at": "2026-09-19T13:06:31+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3019,7 +3019,7 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 7,
+        "geese_score": 9,
         "bbbsas_player": "Pat",
         "bbbsas_score": 4,
         "leader": "FPL Geese",
@@ -3052,7 +3052,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3138,7 +3138,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 7
+            "diff_points": 9
           },
           "bbbsas": {
             "captain": {
@@ -3260,8 +3260,8 @@
         "geese_player": "Phil",
         "geese_score": 4,
         "bbbsas_player": "Tommi",
-        "bbbsas_score": 2,
-        "leader": "FPL Geese",
+        "bbbsas_score": 4,
+        "leader": "Level",
         "detail": {
           "shared_count": 6,
           "same_captain": true,
@@ -3378,7 +3378,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3455,7 +3455,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 0
+            "diff_points": 2
           }
         }
       },
@@ -3463,8 +3463,8 @@
         "geese_player": "Dorian",
         "geese_score": 2,
         "bbbsas_player": "Frej",
-        "bbbsas_score": 2,
-        "leader": "Level",
+        "bbbsas_score": 4,
+        "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
           "shared_count": 6,
           "same_captain": true,
@@ -3581,7 +3581,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3658,16 +3658,16 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 0
+            "diff_points": 2
           }
         }
       },
       {
         "geese_player": "Torsten",
-        "geese_score": 4,
+        "geese_score": 6,
         "bbbsas_player": "Tej",
         "bbbsas_score": 4,
-        "leader": "Level",
+        "leader": "FPL Geese",
         "detail": {
           "shared_count": 9,
           "same_captain": true,
@@ -3688,7 +3688,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 0,
+                "points": 2,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3738,7 +3738,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 0
+            "diff_points": 2
           },
           "bbbsas": {
             "captain": {
@@ -3813,7 +3813,7 @@
       }
     ],
     "provisional_geese": 2,
-    "provisional_bbbsas": 0,
-    "provisional_score": "2–0"
+    "provisional_bbbsas": 1,
+    "provisional_score": "2–1"
   }
 }

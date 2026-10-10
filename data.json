@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T17:49:38+00:00",
+  "generated_at": "2026-10-10T20:49:19+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3824,7 +3824,7 @@
     "fixtures": [
       {
         "geese_player": "Max",
-        "geese_score": 58,
+        "geese_score": 54,
         "bbbsas_player": "Frej",
         "bbbsas_score": 59,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
@@ -3837,10 +3837,10 @@
               "name": "B.Fernandes",
               "team": "MUN",
               "pos": "MID",
-              "points": 3,
+              "points": 1,
               "starting": true,
               "multiplier": 2,
-              "haul": 6
+              "haul": 2
             },
             "differentials": [
               {
@@ -3853,29 +3853,20 @@
                 "multiplier": 1
               },
               {
-                "id": 112,
-                "name": "Van Hecke",
-                "team": "TOT",
-                "pos": "DEF",
-                "points": 6,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 426,
-                "name": "B.Fernandes",
-                "team": "MUN",
-                "pos": "MID",
-                "points": 3,
-                "starting": true,
-                "multiplier": 2
-              },
-              {
                 "id": 427,
                 "name": "Mbeumo",
                 "team": "MUN",
                 "pos": "MID",
-                "points": 3,
+                "points": 8,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
+                "id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "pos": "DEF",
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -3887,6 +3878,15 @@
                 "points": 1,
                 "starting": true,
                 "multiplier": 1
+              },
+              {
+                "id": 426,
+                "name": "B.Fernandes",
+                "team": "MUN",
+                "pos": "MID",
+                "points": 1,
+                "starting": true,
+                "multiplier": 2
               },
               {
                 "id": 236,
@@ -3902,7 +3902,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 6,
+                "points": 3,
                 "starting": false,
                 "multiplier": 0
               },
@@ -3934,7 +3934,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 25
+            "diff_points": 21
           },
           "bbbsas": {
             "captain": {
@@ -4194,7 +4194,7 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 50,
+        "geese_score": 43,
         "bbbsas_player": "Pat",
         "bbbsas_score": 70,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
@@ -4214,11 +4214,20 @@
             },
             "differentials": [
               {
+                "id": 346,
+                "name": "Calvert-Lewin",
+                "team": "LEE",
+                "pos": "FWD",
+                "points": 2,
+                "starting": true,
+                "multiplier": 1
+              },
+              {
                 "id": 112,
                 "name": "Van Hecke",
                 "team": "TOT",
                 "pos": "DEF",
-                "points": 6,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -4227,16 +4236,7 @@
                 "name": "B.Fernandes",
                 "team": "MUN",
                 "pos": "MID",
-                "points": 3,
-                "starting": true,
-                "multiplier": 1
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 2,
+                "points": 1,
                 "starting": true,
                 "multiplier": 1
               },
@@ -4277,7 +4277,7 @@
                 "multiplier": 0
               }
             ],
-            "diff_points": 11
+            "diff_points": 4
           },
           "bbbsas": {
             "captain": {
@@ -4430,7 +4430,7 @@
                 "name": "Kinsky",
                 "team": "TOT",
                 "pos": "GKP",
-                "points": 6,
+                "points": 3,
                 "starting": false,
                 "multiplier": 0
               },
@@ -4513,20 +4513,20 @@
                 "multiplier": 0
               },
               {
-                "id": 112,
-                "name": "Van Hecke",
-                "team": "TOT",
-                "pos": "DEF",
-                "points": 6,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
                 "id": 346,
                 "name": "Calvert-Lewin",
                 "team": "LEE",
                 "pos": "FWD",
                 "points": 2,
+                "starting": false,
+                "multiplier": 0
+              },
+              {
+                "id": 112,
+                "name": "Van Hecke",
+                "team": "TOT",
+                "pos": "DEF",
+                "points": 1,
                 "starting": false,
                 "multiplier": 0
               },

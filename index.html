@@ -251,6 +251,24 @@
   .tap-hint{font-size:11px; color:var(--muted); margin:-4px 4px 0; letter-spacing:.01em}
 
   /* Empty state */
+  /* Player records */
+  .rec-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .rec-panel{border:1px solid var(--line); border-radius:14px; background:var(--panel-2);
+    padding:12px 14px 6px}
+  .rec-head{display:flex; justify-content:space-between; align-items:baseline;
+    font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:.06em;
+    text-transform:uppercase; padding-bottom:9px; border-bottom:1px solid var(--line)}
+  .rec-total{font-variant-numeric:tabular-nums; letter-spacing:.02em}
+  .rec-row{display:flex; align-items:center; gap:10px; padding:9px 0;
+    border-bottom:1px solid rgba(34,48,76,.5)}
+  .rec-row:last-child{border-bottom:none}
+  .rec-rank{font-family:var(--display); font-weight:700; font-size:13px; color:var(--muted);
+    width:14px; text-align:center}
+  .rec-name{flex:1; font-size:14.5px; font-weight:500}
+  .rec-wdl{font-family:var(--display); font-weight:800; font-size:18px;
+    font-variant-numeric:tabular-nums; letter-spacing:.03em}
+  @media (max-width:520px){ .rec-grid{grid-template-columns:1fr} }
+
   .empty{border:1px dashed var(--line); border-radius:16px; background:var(--panel-2);
     padding:34px 24px; text-align:center; color:var(--muted)}
   .empty h3{font-family:var(--display); font-weight:700; color:var(--text);
@@ -428,12 +446,57 @@ function render(data){
            <span><i style="background:var(--bbbsas)"></i>BBBSAS</span>
          </div>${chart(data)}
        </div>`
+    + `<div class="sechead"><h2>Player records</h2>
+         <span class="sub">Won–drawn–lost · completed GWs only</span></div>`
+    + recordsBlock(data)
     + `<div class="sechead"><h2>Week by week</h2>
          <span class="sub">Tap a card for the four fixtures</span></div>`
     + `<div class="rail" id="rail">${data.gameweeks.map(gwCard.bind(null,data)).join("")}</div>`;
 
   bindHandlers();
   const rail = q("#rail"); if(rail) rail.scrollLeft = rail.scrollWidth;
+}
+
+// ---- Player records (W-D-L) ----------------------------------------------
+function playerRecords(data){
+  const rec = {};
+  const all = [...data.teams.geese.players, ...data.teams.bbbsas.players];
+  all.forEach(p => rec[p] = {name:p, w:0, d:0, l:0, pts:0});
+  data.gameweeks.forEach(gw => gw.fixtures.forEach(f => {
+    const g = rec[f.geese_player], b = rec[f.bbbsas_player];
+    if(!g || !b) return;
+    g.pts += f.geese_score; b.pts += f.bbbsas_score;
+    if(f.winner === data.teams.geese.name){ g.w++; b.l++; }
+    else if(f.winner === data.teams.bbbsas.name){ b.w++; g.l++; }
+    else { g.d++; b.d++; }
+  }));
+  // Rank: most wins, then fewest losses, then total FPL points.
+  const rank = (a,b) => (b.w - a.w) || (a.l - b.l) || (b.pts - a.pts);
+  const side = (players) => players.map(p => rec[p]).sort(rank);
+  return { geese: side(data.teams.geese.players), bbbsas: side(data.teams.bbbsas.players) };
+}
+
+function recordsBlock(data){
+  const r = playerRecords(data);
+  const panel = (list, name, colour) => {
+    const t = list.reduce((a,p)=>({w:a.w+p.w, d:a.d+p.d, l:a.l+p.l}), {w:0,d:0,l:0});
+    const rows = list.map((p,i)=>`
+      <div class="rec-row">
+        <span class="rec-rank">${i+1}</span>
+        <span class="rec-name">${p.name}</span>
+        <span class="rec-wdl">${p.w}${EN_DASH}${p.d}${EN_DASH}${p.l}</span>
+      </div>`).join("");
+    return `<div class="rec-panel" style="border-top:3px solid ${colour}">
+      <div class="rec-head">
+        <span style="color:${colour}">${name}</span>
+        <span class="rec-total" style="color:${colour}">${t.w}${EN_DASH}${t.d}${EN_DASH}${t.l}</span>
+      </div>${rows}
+    </div>`;
+  };
+  return `<div class="rec-grid">
+    ${panel(r.geese, "FPL Geese", "var(--geese)")}
+    ${panel(r.bbbsas, "BBBSAS", "var(--bbbsas)")}
+  </div>`;
 }
 
 function liveBlock(data){

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T12:36:56+00:00",
+  "generated_at": "2026-10-11T13:00:35+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -13,7 +13,7 @@
     },
     "bbbsas": {
       "name": "Big Ben Brexit Sauce Appreciation Society",
-      "short": "BBBSAS",
+      "short": "Big Brexit Sauce",
       "colour": "#8b5cf6",
       "players": [
         "Tommi",
@@ -69,7 +69,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -80,7 +80,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -89,7 +89,7 @@
                   "team": "SUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -98,7 +98,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -107,7 +107,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -116,7 +116,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -125,7 +125,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -134,7 +134,7 @@
                   "team": "SUN",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -143,7 +143,7 @@
                   "team": "IPS",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -152,11 +152,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 21
+              "diff_points": 21,
+              "chip": "bboost"
             },
             "bbbsas": {
               "captain": {
@@ -165,7 +166,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -176,7 +177,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -185,7 +186,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 9,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -194,7 +195,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -203,7 +204,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -212,7 +213,7 @@
                   "team": "LEE",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -221,7 +222,7 @@
                   "team": "LIV",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -230,7 +231,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -239,7 +240,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -248,11 +249,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 47
+              "diff_points": 47,
+              "chip": "bboost"
             }
           }
         },
@@ -272,7 +274,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -283,7 +285,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 9,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -292,7 +294,7 @@
                   "team": "LEE",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -301,7 +303,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -310,7 +312,7 @@
                   "team": "BHA",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -319,7 +321,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -328,7 +330,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -337,11 +339,12 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 33
+              "diff_points": 33,
+              "chip": "bboost"
             },
             "bbbsas": {
               "captain": {
@@ -350,7 +353,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -361,7 +364,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 11,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -370,7 +373,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -379,7 +382,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -388,7 +391,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -397,7 +400,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 2
                 },
                 {
@@ -406,7 +409,7 @@
                   "team": "SUN",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -415,11 +418,12 @@
                   "team": "IPS",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 35
+              "diff_points": 35,
+              "chip": "bboost"
             }
           }
         },
@@ -439,7 +443,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -450,7 +454,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -459,7 +463,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -468,7 +472,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -477,7 +481,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 2
                 },
                 {
@@ -486,7 +490,7 @@
                   "team": "CRY",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -495,47 +499,12 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 173,
-                  "name": "Thomas",
-                  "team": "COV",
-                  "pos": "DEF",
-                  "points": 3,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 111,
-                  "name": "Steele",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 31,
-                  "name": "Konsa",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 50,
-                  "name": "Burrowes",
-                  "team": "AVL",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 22
+              "diff_points": 22,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -544,7 +513,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -555,7 +524,7 @@
                   "team": "BHA",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -564,7 +533,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -573,7 +542,7 @@
                   "team": "IPS",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -582,7 +551,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -591,7 +560,7 @@
                   "team": "NFO",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -600,7 +569,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -609,7 +578,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -618,7 +587,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -627,7 +596,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -636,11 +605,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 29
+              "diff_points": 29,
+              "chip": "bboost"
             }
           }
         },
@@ -660,7 +630,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -671,7 +641,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 11,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -680,7 +650,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 11,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -689,7 +659,7 @@
                   "team": "BHA",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -698,7 +668,7 @@
                   "team": "IPS",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -707,7 +677,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -716,7 +686,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -725,7 +695,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -734,7 +704,7 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -743,11 +713,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 40
+              "diff_points": 40,
+              "chip": "bboost"
             },
             "bbbsas": {
               "captain": {
@@ -756,7 +727,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 4
               },
@@ -767,7 +738,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 9,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -776,7 +747,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -785,7 +756,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -794,7 +765,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -803,47 +774,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 173,
-                  "name": "Thomas",
-                  "team": "COV",
-                  "pos": "DEF",
-                  "points": 3,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 527,
-                  "name": "Richarlison",
-                  "team": "TOT",
-                  "pos": "FWD",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 110,
-                  "name": "Rushworth",
-                  "team": "COV",
-                  "pos": "GKP",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 175,
-                  "name": "van Ewijk",
-                  "team": "COV",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 29
+              "diff_points": 29,
+              "chip": null
             }
           }
         }
@@ -865,7 +801,7 @@
           "bbbsas_score": 101,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 9,
+            "shared_count": 7,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -874,7 +810,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -885,7 +821,16 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
+                  "multiplier": 1
+                },
+                {
+                  "id": 346,
+                  "name": "Calvert-Lewin",
+                  "team": "LEE",
+                  "pos": "FWD",
+                  "points": 8,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -894,7 +839,7 @@
                   "team": "SUN",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -903,38 +848,12 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 124,
-                  "name": "Groß",
-                  "team": "BHA",
-                  "pos": "MID",
-                  "points": 13,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 305,
-                  "name": "Davis",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 17
+              "diff_points": 25,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -943,7 +862,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -954,7 +873,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -963,7 +882,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -972,7 +891,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -981,29 +900,12 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 469,
-                  "name": "N.Williams",
-                  "team": "NFO",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 304,
-                  "name": "O'Shea",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 19
+              "diff_points": 19,
+              "chip": null
             }
           }
         },
@@ -1023,7 +925,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -1034,7 +936,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1043,7 +945,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1052,7 +954,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1061,47 +963,12 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 346,
-                  "name": "Calvert-Lewin",
-                  "team": "LEE",
-                  "pos": "FWD",
-                  "points": 8,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 334,
-                  "name": "Muharemović",
-                  "team": "LEE",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 504,
-                  "name": "Vuskovic",
-                  "team": "BHA",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 11
+              "diff_points": 11,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -1110,7 +977,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -1121,7 +988,7 @@
                   "team": "COV",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1130,7 +997,7 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1139,7 +1006,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1148,7 +1015,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1157,7 +1024,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1166,7 +1033,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1175,7 +1042,7 @@
                   "team": "COV",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1184,11 +1051,12 @@
                   "team": "COV",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 }
               ],
-              "diff_points": 42
+              "diff_points": 42,
+              "chip": "bboost"
             }
           }
         },
@@ -1199,7 +1067,7 @@
           "bbbsas_score": 107,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 7,
+            "shared_count": 6,
             "same_captain": false,
             "geese": {
               "captain": {
@@ -1208,7 +1076,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 13,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 26
               },
@@ -1219,7 +1087,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1228,7 +1096,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 2
                 },
                 {
@@ -1237,7 +1105,7 @@
                   "team": "COV",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1246,47 +1114,21 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
-                  "id": 31,
-                  "name": "Konsa",
-                  "team": "ARS",
+                  "id": 112,
+                  "name": "Van Hecke",
+                  "team": "TOT",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 111,
-                  "name": "Steele",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 50,
-                  "name": "Burrowes",
-                  "team": "AVL",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 204,
-                  "name": "Mitchell",
-                  "team": "CRY",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
+                  "playing": true,
+                  "multiplier": 1
                 }
               ],
-              "diff_points": 51
+              "diff_points": 52,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -1295,7 +1137,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -1306,7 +1148,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1315,7 +1157,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 7,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1324,7 +1166,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1333,7 +1175,7 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1342,38 +1184,12 @@
                   "team": "LIV",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 127,
-                  "name": "Gomez",
-                  "team": "BHA",
-                  "pos": "MID",
-                  "points": 5,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 329,
-                  "name": "Rodon",
-                  "team": "LEE",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 22
+              "diff_points": 22,
+              "chip": null
             }
           }
         },
@@ -1384,7 +1200,7 @@
           "bbbsas_score": 127,
           "winner": "Big Ben Brexit Sauce Appreciation Society",
           "detail": {
-            "shared_count": 8,
+            "shared_count": 6,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -1393,7 +1209,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -1404,7 +1220,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1413,7 +1229,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1422,7 +1238,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1431,7 +1247,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1440,29 +1256,12 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 423,
-                  "name": "Shaw",
-                  "team": "MUN",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 304,
-                  "name": "O'Shea",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 22
+              "diff_points": 22,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -1471,7 +1270,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 23,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 46
               },
@@ -1482,7 +1281,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1491,7 +1290,16 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
+                  "multiplier": 1
+                },
+                {
+                  "id": 346,
+                  "name": "Calvert-Lewin",
+                  "team": "LEE",
+                  "pos": "FWD",
+                  "points": 8,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1500,7 +1308,7 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1509,38 +1317,12 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 127,
-                  "name": "Gomez",
-                  "team": "BHA",
-                  "pos": "MID",
-                  "points": 5,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 306,
-                  "name": "Greaves",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": -1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 34
+              "diff_points": 42,
+              "chip": null
             }
           }
         }
@@ -1562,7 +1344,7 @@
           "bbbsas_score": 44,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 4,
+            "shared_count": 3,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -1571,7 +1353,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 27
               },
@@ -1582,7 +1364,7 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1591,7 +1373,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1600,7 +1382,7 @@
                   "team": "BHA",
                   "pos": "GKP",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1609,7 +1391,7 @@
                   "team": "BRE",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1618,7 +1400,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1627,7 +1409,16 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
+                  "multiplier": 1
+                },
+                {
+                  "id": 165,
+                  "name": "João Pedro",
+                  "team": "CHE",
+                  "pos": "FWD",
+                  "points": 1,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1636,47 +1427,12 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 542,
-                  "name": "E.Le Fée",
-                  "team": "SUN",
-                  "pos": "MID",
-                  "points": 8,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 496,
-                  "name": "Kinsky",
-                  "team": "TOT",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 305,
-                  "name": "Davis",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 25
+              "diff_points": 26,
+              "chip": "3xc"
             },
             "bbbsas": {
               "captain": {
@@ -1685,7 +1441,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 18
               },
@@ -1696,7 +1452,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1705,7 +1461,7 @@
                   "team": "BHA",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1714,7 +1470,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1723,7 +1479,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1732,7 +1488,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1741,7 +1497,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1750,7 +1506,7 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1759,38 +1515,12 @@
                   "team": "BRE",
                   "pos": "MID",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 449,
-                  "name": "Hall",
-                  "team": "NEW",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 31,
-                  "name": "Konsa",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 251,
-                  "name": "Lecomte",
-                  "team": "FUL",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 23
+              "diff_points": 23,
+              "chip": "wildcard"
             }
           }
         },
@@ -1801,7 +1531,7 @@
           "bbbsas_score": 61,
           "winner": "Big Ben Brexit Sauce Appreciation Society",
           "detail": {
-            "shared_count": 12,
+            "shared_count": 9,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -1810,7 +1540,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 18
               },
@@ -1821,7 +1551,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1830,20 +1560,12 @@
                   "team": "LEE",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 504,
-                  "name": "Vuskovic",
-                  "team": "BHA",
-                  "pos": "DEF",
-                  "points": 12,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 12
+              "diff_points": 12,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -1852,7 +1574,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 27
               },
@@ -1863,29 +1585,21 @@
                   "team": "NFO",
                   "pos": "DEF",
                   "points": 7,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
-                  "id": 304,
-                  "name": "O'Shea",
-                  "team": "IPS",
+                  "id": 418,
+                  "name": "Maguire",
+                  "team": "MUN",
                   "pos": "DEF",
-                  "points": 3,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 387,
-                  "name": "O'Reilly",
-                  "team": "MCI",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
+                  "points": 2,
+                  "playing": true,
+                  "multiplier": 1
                 }
               ],
-              "diff_points": 7
+              "diff_points": 9,
+              "chip": "3xc"
             }
           }
         },
@@ -1905,7 +1619,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 27
               },
@@ -1916,7 +1630,7 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1925,7 +1639,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1934,7 +1648,7 @@
                   "team": "COV",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -1943,47 +1657,12 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 204,
-                  "name": "Mitchell",
-                  "team": "CRY",
-                  "pos": "DEF",
-                  "points": 15,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 31,
-                  "name": "Konsa",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 111,
-                  "name": "Steele",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 50,
-                  "name": "Burrowes",
-                  "team": "AVL",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 21
+              "diff_points": 21,
+              "chip": "3xc"
             },
             "bbbsas": {
               "captain": {
@@ -1992,7 +1671,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 27
               },
@@ -2003,7 +1682,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2012,7 +1691,7 @@
                   "team": "BHA",
                   "pos": "GKP",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2021,7 +1700,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2030,47 +1709,12 @@
                   "team": "MUN",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 496,
-                  "name": "Kinsky",
-                  "team": "TOT",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 127,
-                  "name": "Gomez",
-                  "team": "BHA",
-                  "pos": "MID",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 306,
-                  "name": "Greaves",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 15
+              "diff_points": 15,
+              "chip": "3xc"
             }
           }
         },
@@ -2090,7 +1734,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 18
               },
@@ -2101,7 +1745,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2110,7 +1754,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2119,7 +1763,7 @@
                   "team": "NFO",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2128,7 +1772,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2137,7 +1781,7 @@
                   "team": "BRE",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2146,7 +1790,7 @@
                   "team": "BRE",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2155,7 +1799,7 @@
                   "team": "BRE",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2164,47 +1808,12 @@
                   "team": "NEW",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 36,
-                  "name": "Maatsen",
-                  "team": "AVL",
-                  "pos": "DEF",
-                  "points": 7,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 277,
-                  "name": "Egan",
-                  "team": "HUL",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 290,
-                  "name": "Slater",
-                  "team": "HUL",
-                  "pos": "MID",
-                  "points": 3,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 58,
-                  "name": "Forster",
-                  "team": "BOU",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 32
+              "diff_points": 32,
+              "chip": "freehit"
             },
             "bbbsas": {
               "captain": {
@@ -2213,7 +1822,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 18
               },
@@ -2224,7 +1833,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2233,7 +1842,7 @@
                   "team": "NEW",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2242,7 +1851,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2251,7 +1860,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2260,7 +1869,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2269,7 +1878,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2278,7 +1887,7 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2287,47 +1896,12 @@
                   "team": "BRE",
                   "pos": "MID",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 31,
-                  "name": "Konsa",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 8,
-                  "name": "Calafiori",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 165,
-                  "name": "João Pedro",
-                  "team": "CHE",
-                  "pos": "FWD",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 623,
-                  "name": "Bentley",
-                  "team": "COV",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 21
+              "diff_points": 21,
+              "chip": "wildcard"
             }
           }
         }
@@ -2358,7 +1932,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 10
               },
@@ -2369,7 +1943,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2378,7 +1952,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2387,7 +1961,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2396,47 +1970,12 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 305,
-                  "name": "Davis",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 14,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 282,
-                  "name": "Giles",
-                  "team": "HUL",
-                  "pos": "DEF",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 249,
-                  "name": "Barry",
-                  "team": "EVE",
-                  "pos": "FWD",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 58,
-                  "name": "Forster",
-                  "team": "BOU",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 24
+              "diff_points": 24,
+              "chip": "freehit"
             },
             "bbbsas": {
               "captain": {
@@ -2445,7 +1984,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 10
               },
@@ -2456,7 +1995,7 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 10,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2465,7 +2004,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 9,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2474,7 +2013,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2483,47 +2022,12 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 496,
-                  "name": "Kinsky",
-                  "team": "TOT",
-                  "pos": "GKP",
-                  "points": 7,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 127,
-                  "name": "Gomez",
-                  "team": "BHA",
-                  "pos": "MID",
-                  "points": 3,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 306,
-                  "name": "Greaves",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 23
+              "diff_points": 23,
+              "chip": null
             }
           }
         },
@@ -2534,7 +2038,7 @@
           "bbbsas_score": 103,
           "winner": "Big Ben Brexit Sauce Appreciation Society",
           "detail": {
-            "shared_count": 9,
+            "shared_count": 8,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -2543,7 +2047,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 10
               },
@@ -2554,7 +2058,7 @@
                   "team": "NFO",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2563,7 +2067,7 @@
                   "team": "MCI",
                   "pos": "GKP",
                   "points": 7,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2572,38 +2076,12 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 277,
-                  "name": "Egan",
-                  "team": "HUL",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 58,
-                  "name": "Forster",
-                  "team": "BOU",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 454,
-                  "name": "Elanga",
-                  "team": "NEW",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 18
+              "diff_points": 18,
+              "chip": "wildcard"
             },
             "bbbsas": {
               "captain": {
@@ -2612,7 +2090,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 15
               },
@@ -2623,7 +2101,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 17,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2632,7 +2110,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 14,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2641,38 +2119,12 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 391,
-                  "name": "Gvardiol",
-                  "team": "MCI",
-                  "pos": "DEF",
-                  "points": 11,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 565,
-                  "name": "M.Sangaré",
-                  "team": "BRE",
-                  "pos": "MID",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 623,
-                  "name": "Bentley",
-                  "team": "COV",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 34
+              "diff_points": 34,
+              "chip": "3xc"
             }
           }
         },
@@ -2692,7 +2144,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 18
               },
@@ -2703,7 +2155,7 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 10,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2712,7 +2164,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2721,47 +2173,12 @@
                   "team": "CRY",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 112,
-                  "name": "Van Hecke",
-                  "team": "TOT",
-                  "pos": "DEF",
-                  "points": 8,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 111,
-                  "name": "Steele",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 50,
-                  "name": "Burrowes",
-                  "team": "AVL",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 173,
-                  "name": "Thomas",
-                  "team": "COV",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 13
+              "diff_points": 13,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -2770,7 +2187,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 3,
                 "haul": 15
               },
@@ -2781,7 +2198,7 @@
                   "team": "BHA",
                   "pos": "DEF",
                   "points": 11,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2790,7 +2207,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 3
                 },
                 {
@@ -2799,47 +2216,12 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 391,
-                  "name": "Gvardiol",
-                  "team": "MCI",
-                  "pos": "DEF",
-                  "points": 11,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 565,
-                  "name": "M.Sangaré",
-                  "team": "BRE",
-                  "pos": "MID",
-                  "points": 4,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 251,
-                  "name": "Lecomte",
-                  "team": "FUL",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 449,
-                  "name": "Hall",
-                  "team": "NEW",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 28
+              "diff_points": 28,
+              "chip": "3xc"
             }
           }
         },
@@ -2850,7 +2232,7 @@
           "bbbsas_score": 84,
           "winner": "Big Ben Brexit Sauce Appreciation Society",
           "detail": {
-            "shared_count": 8,
+            "shared_count": 4,
             "same_captain": false,
             "geese": {
               "captain": {
@@ -2859,7 +2241,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 5,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 10
               },
@@ -2870,7 +2252,16 @@
                   "team": "BHA",
                   "pos": "DEF",
                   "points": 11,
-                  "starting": true,
+                  "playing": true,
+                  "multiplier": 1
+                },
+                {
+                  "id": 346,
+                  "name": "Calvert-Lewin",
+                  "team": "LEE",
+                  "pos": "FWD",
+                  "points": 10,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2879,7 +2270,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 5,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 2
                 },
                 {
@@ -2888,7 +2279,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2897,7 +2288,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2906,7 +2297,7 @@
                   "team": "LIV",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2915,20 +2306,12 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 423,
-                  "name": "Shaw",
-                  "team": "MUN",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 29
+              "diff_points": 39,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -2937,7 +2320,7 @@
                 "team": "CHE",
                 "pos": "FWD",
                 "points": 12,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 24
               },
@@ -2948,7 +2331,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 17,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2957,7 +2340,7 @@
                   "team": "MCI",
                   "pos": "FWD",
                   "points": 9,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2966,7 +2349,16 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
+                  "multiplier": 1
+                },
+                {
+                  "id": 397,
+                  "name": "Semenyo",
+                  "team": "MCI",
+                  "pos": "MID",
+                  "points": 3,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2975,7 +2367,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2984,7 +2376,7 @@
                   "team": "NFO",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -2993,20 +2385,12 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 418,
-                  "name": "Maguire",
-                  "team": "MUN",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 40
+              "diff_points": 43,
+              "chip": null
             }
           }
         }
@@ -3028,7 +2412,7 @@
           "bbbsas_score": 38,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 4,
+            "shared_count": 2,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -3037,18 +2421,27 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
               "differentials": [
+                {
+                  "id": 124,
+                  "name": "Groß",
+                  "team": "BHA",
+                  "pos": "MID",
+                  "points": 14,
+                  "playing": true,
+                  "multiplier": 1
+                },
                 {
                   "id": 87,
                   "name": "Ajer",
                   "team": "BRE",
                   "pos": "DEF",
                   "points": 7,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3057,7 +2450,7 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3066,7 +2459,7 @@
                   "team": "EVE",
                   "pos": "MID",
                   "points": 3,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3075,7 +2468,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3084,7 +2477,7 @@
                   "team": "IPS",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3093,7 +2486,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3102,7 +2495,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3111,38 +2504,12 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 542,
-                  "name": "E.Le Fée",
-                  "team": "SUN",
-                  "pos": "MID",
-                  "points": 5,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 534,
-                  "name": "Hume",
-                  "team": "SUN",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 26
+              "diff_points": 40,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -3151,7 +2518,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3162,7 +2529,7 @@
                   "team": "NEW",
                   "pos": "DEF",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3171,7 +2538,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3180,7 +2547,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3189,7 +2556,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3198,7 +2565,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3207,7 +2574,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3216,7 +2583,7 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3225,7 +2592,7 @@
                   "team": "BRE",
                   "pos": "MID",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3234,29 +2601,12 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 115,
-                  "name": "De Cuyper",
-                  "team": "BHA",
-                  "pos": "DEF",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 623,
-                  "name": "Bentley",
-                  "team": "COV",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 25
+              "diff_points": 25,
+              "chip": null
             }
           }
         },
@@ -3267,7 +2617,7 @@
           "bbbsas_score": 35,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 6,
+            "shared_count": 5,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -3276,7 +2626,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3287,7 +2637,7 @@
                   "team": "NEW",
                   "pos": "DEF",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3296,7 +2646,7 @@
                   "team": "BHA",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3305,7 +2655,7 @@
                   "team": "MCI",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3314,7 +2664,7 @@
                   "team": "CHE",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3323,7 +2673,7 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3332,38 +2682,12 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 277,
-                  "name": "Egan",
-                  "team": "HUL",
-                  "pos": "DEF",
-                  "points": 1,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 58,
-                  "name": "Forster",
-                  "team": "BOU",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 454,
-                  "name": "Elanga",
-                  "team": "NEW",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 25
+              "diff_points": 25,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -3372,7 +2696,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3383,7 +2707,7 @@
                   "team": "BHA",
                   "pos": "MID",
                   "points": 8,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3392,7 +2716,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3401,7 +2725,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3410,7 +2734,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3419,7 +2743,7 @@
                   "team": "LEE",
                   "pos": "FWD",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3428,38 +2752,12 @@
                   "team": "SUN",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 306,
-                  "name": "Greaves",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 10,
-                  "name": "White",
-                  "team": "ARS",
-                  "pos": "DEF",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 17
+              "diff_points": 17,
+              "chip": null
             }
           }
         },
@@ -3470,7 +2768,7 @@
           "bbbsas_score": 64,
           "winner": "Big Ben Brexit Sauce Appreciation Society",
           "detail": {
-            "shared_count": 6,
+            "shared_count": 5,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -3479,7 +2777,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3490,7 +2788,7 @@
                   "team": "CRY",
                   "pos": "DEF",
                   "points": 7,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3499,7 +2797,7 @@
                   "team": "TOT",
                   "pos": "DEF",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3508,7 +2806,7 @@
                   "team": "MUN",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3517,7 +2815,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3526,7 +2824,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3535,38 +2833,12 @@
                   "team": "ARS",
                   "pos": "DEF",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 173,
-                  "name": "Thomas",
-                  "team": "COV",
-                  "pos": "DEF",
-                  "points": 9,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 111,
-                  "name": "Steele",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 50,
-                  "name": "Burrowes",
-                  "team": "AVL",
-                  "pos": "MID",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 19
+              "diff_points": 19,
+              "chip": null
             },
             "bbbsas": {
               "captain": {
@@ -3575,7 +2847,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3586,7 +2858,7 @@
                   "team": "MCI",
                   "pos": "MID",
                   "points": 17,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3595,7 +2867,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3604,7 +2876,7 @@
                   "team": "MCI",
                   "pos": "DEF",
                   "points": 4,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3613,7 +2885,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3622,7 +2894,7 @@
                   "team": "NFO",
                   "pos": "DEF",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3631,38 +2903,12 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 418,
-                  "name": "Maguire",
-                  "team": "MUN",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 304,
-                  "name": "O'Shea",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 33
+              "diff_points": 33,
+              "chip": null
             }
           }
         },
@@ -3673,7 +2919,7 @@
           "bbbsas_score": 38,
           "winner": "FPL Geese",
           "detail": {
-            "shared_count": 9,
+            "shared_count": 6,
             "same_captain": true,
             "geese": {
               "captain": {
@@ -3682,18 +2928,27 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
               "differentials": [
+                {
+                  "id": 124,
+                  "name": "Groß",
+                  "team": "BHA",
+                  "pos": "MID",
+                  "points": 14,
+                  "playing": true,
+                  "multiplier": 1
+                },
                 {
                   "id": 249,
                   "name": "Barry",
                   "team": "EVE",
                   "pos": "FWD",
                   "points": 6,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3702,7 +2957,7 @@
                   "team": "TOT",
                   "pos": "GKP",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3711,7 +2966,7 @@
                   "team": "NFO",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3720,29 +2975,12 @@
                   "team": "ARS",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 109,
-                  "name": "Verbruggen",
-                  "team": "BHA",
-                  "pos": "GKP",
-                  "points": 6,
-                  "starting": false,
-                  "multiplier": 0
-                },
-                {
-                  "id": 305,
-                  "name": "Davis",
-                  "team": "IPS",
-                  "pos": "DEF",
-                  "points": 2,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 12
+              "diff_points": 26,
+              "chip": "wildcard"
             },
             "bbbsas": {
               "captain": {
@@ -3751,7 +2989,7 @@
                 "team": "MCI",
                 "pos": "FWD",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2,
                 "haul": 12
               },
@@ -3762,7 +3000,7 @@
                   "team": "NEW",
                   "pos": "DEF",
                   "points": 13,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3771,7 +3009,7 @@
                   "team": "LIV",
                   "pos": "MID",
                   "points": 2,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3780,7 +3018,7 @@
                   "team": "ARS",
                   "pos": "GKP",
                   "points": 1,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3789,7 +3027,7 @@
                   "team": "BRE",
                   "pos": "MID",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
                 },
                 {
@@ -3798,20 +3036,12 @@
                   "team": "NEW",
                   "pos": "FWD",
                   "points": 0,
-                  "starting": true,
+                  "playing": true,
                   "multiplier": 1
-                },
-                {
-                  "id": 251,
-                  "name": "Lecomte",
-                  "team": "FUL",
-                  "pos": "GKP",
-                  "points": 0,
-                  "starting": false,
-                  "multiplier": 0
                 }
               ],
-              "diff_points": 16
+              "diff_points": 16,
+              "chip": null
             }
           }
         }
@@ -3829,7 +3059,7 @@
         "bbbsas_score": 59,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
-          "shared_count": 5,
+          "shared_count": 4,
           "same_captain": false,
           "geese": {
             "captain": {
@@ -3838,7 +3068,7 @@
               "team": "MUN",
               "pos": "MID",
               "points": 1,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 2
             },
@@ -3849,7 +3079,7 @@
                 "team": "BHA",
                 "pos": "GKP",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3858,7 +3088,16 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 8,
-                "starting": true,
+                "playing": true,
+                "multiplier": 1
+              },
+              {
+                "id": 87,
+                "name": "Ajer",
+                "team": "BRE",
+                "pos": "DEF",
+                "points": 6,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3867,7 +3106,7 @@
                 "team": "TOT",
                 "pos": "DEF",
                 "points": 3,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3876,7 +3115,7 @@
                 "team": "IPS",
                 "pos": "DEF",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3885,7 +3124,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2
               },
               {
@@ -3894,47 +3133,12 @@
                 "team": "EVE",
                 "pos": "MID",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 496,
-                "name": "Kinsky",
-                "team": "TOT",
-                "pos": "GKP",
-                "points": 3,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 542,
-                "name": "E.Le Fée",
-                "team": "SUN",
-                "pos": "MID",
-                "points": 2,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 2,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 534,
-                "name": "Hume",
-                "team": "SUN",
-                "pos": "DEF",
-                "points": 1,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 23
+            "diff_points": 29,
+            "chip": null
           },
           "bbbsas": {
             "captain": {
@@ -3943,7 +3147,7 @@
               "team": "ARS",
               "pos": "MID",
               "points": 2,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 4
             },
@@ -3954,7 +3158,7 @@
                 "team": "BHA",
                 "pos": "DEF",
                 "points": 15,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3963,7 +3167,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3972,7 +3176,7 @@
                 "team": "ARS",
                 "pos": "GKP",
                 "points": 3,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3981,7 +3185,7 @@
                 "team": "ARS",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2
               },
               {
@@ -3990,7 +3194,7 @@
                 "team": "BRE",
                 "pos": "MID",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -3999,7 +3203,7 @@
                 "team": "HUL",
                 "pos": "DEF",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4008,38 +3212,12 @@
                 "team": "NFO",
                 "pos": "MID",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 321,
-                "name": "Walle Egeli",
-                "team": "IPS",
-                "pos": "FWD",
-                "points": 1,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 623,
-                "name": "Bentley",
-                "team": "COV",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 32
+            "diff_points": 32,
+            "chip": "wildcard"
           }
         }
       },
@@ -4050,7 +3228,7 @@
         "bbbsas_score": 70,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
-          "shared_count": 9,
+          "shared_count": 6,
           "same_captain": true,
           "geese": {
             "captain": {
@@ -4059,18 +3237,27 @@
               "team": "CHE",
               "pos": "MID",
               "points": 8,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 16
             },
             "differentials": [
+              {
+                "id": 31,
+                "name": "Konsa",
+                "team": "ARS",
+                "pos": "DEF",
+                "points": 4,
+                "playing": true,
+                "multiplier": 1
+              },
               {
                 "id": 15,
                 "name": "Ødegaard",
                 "team": "ARS",
                 "pos": "MID",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4079,7 +3266,7 @@
                 "team": "MCI",
                 "pos": "GKP",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4088,7 +3275,7 @@
                 "team": "NFO",
                 "pos": "MID",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4097,29 +3284,12 @@
                 "team": "NEW",
                 "pos": "MID",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 58,
-                "name": "Forster",
-                "team": "BOU",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 277,
-                "name": "Egan",
-                "team": "HUL",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 1
+            "diff_points": 5,
+            "chip": null
           },
           "bbbsas": {
             "captain": {
@@ -4128,18 +3298,27 @@
               "team": "CHE",
               "pos": "MID",
               "points": 8,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 16
             },
             "differentials": [
+              {
+                "id": 40,
+                "name": "Rogers",
+                "team": "CHE",
+                "pos": "MID",
+                "points": 9,
+                "playing": true,
+                "multiplier": 1
+              },
               {
                 "id": 124,
                 "name": "Groß",
                 "team": "BHA",
                 "pos": "MID",
                 "points": 6,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4148,7 +3327,16 @@
                 "team": "ARS",
                 "pos": "GKP",
                 "points": 3,
-                "starting": true,
+                "playing": true,
+                "multiplier": 1
+              },
+              {
+                "id": 449,
+                "name": "Hall",
+                "team": "NEW",
+                "pos": "DEF",
+                "points": 0,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4157,38 +3345,12 @@
                 "team": "LIV",
                 "pos": "MID",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 565,
-                "name": "M.Sangaré",
-                "team": "BRE",
-                "pos": "MID",
-                "points": 1,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 251,
-                "name": "Lecomte",
-                "team": "FUL",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 9
+            "diff_points": 18,
+            "chip": null
           }
         }
       },
@@ -4199,7 +3361,7 @@
         "bbbsas_score": 70,
         "leader": "Big Ben Brexit Sauce Appreciation Society",
         "detail": {
-          "shared_count": 8,
+          "shared_count": 7,
           "same_captain": false,
           "geese": {
             "captain": {
@@ -4208,7 +3370,7 @@
               "team": "MCI",
               "pos": "FWD",
               "points": 0,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 0
             },
@@ -4219,7 +3381,7 @@
                 "team": "TOT",
                 "pos": "DEF",
                 "points": 3,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4228,7 +3390,7 @@
                 "team": "LEE",
                 "pos": "FWD",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4237,7 +3399,7 @@
                 "team": "MUN",
                 "pos": "MID",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4246,38 +3408,12 @@
                 "team": "COV",
                 "pos": "DEF",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 111,
-                "name": "Steele",
-                "team": "BHA",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 204,
-                "name": "Mitchell",
-                "team": "CRY",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 50,
-                "name": "Burrowes",
-                "team": "AVL",
-                "pos": "MID",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 6
+            "diff_points": 6,
+            "chip": null
           },
           "bbbsas": {
             "captain": {
@@ -4286,7 +3422,7 @@
               "team": "CHE",
               "pos": "MID",
               "points": 8,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 16
             },
@@ -4297,7 +3433,7 @@
                 "team": "BHA",
                 "pos": "DEF",
                 "points": 15,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4306,7 +3442,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 8,
-                "starting": true,
+                "playing": true,
                 "multiplier": 2
               },
               {
@@ -4315,7 +3451,7 @@
                 "team": "NEW",
                 "pos": "DEF",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4324,38 +3460,12 @@
                 "team": "NEW",
                 "pos": "FWD",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 565,
-                "name": "M.Sangaré",
-                "team": "BRE",
-                "pos": "MID",
-                "points": 1,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 623,
-                "name": "Bentley",
-                "team": "COV",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 31
+            "diff_points": 31,
+            "chip": null
           }
         }
       },
@@ -4366,7 +3476,7 @@
         "bbbsas_score": 58,
         "leader": "FPL Geese",
         "detail": {
-          "shared_count": 7,
+          "shared_count": 6,
           "same_captain": true,
           "geese": {
             "captain": {
@@ -4375,7 +3485,7 @@
               "team": "MCI",
               "pos": "FWD",
               "points": 0,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 0
             },
@@ -4386,7 +3496,7 @@
                 "team": "BHA",
                 "pos": "GKP",
                 "points": 9,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4395,7 +3505,7 @@
                 "team": "CHE",
                 "pos": "MID",
                 "points": 8,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4404,7 +3514,7 @@
                 "team": "ARS",
                 "pos": "DEF",
                 "points": 4,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4413,7 +3523,7 @@
                 "team": "ARS",
                 "pos": "MID",
                 "points": 1,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4422,38 +3532,12 @@
                 "team": "EVE",
                 "pos": "FWD",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 496,
-                "name": "Kinsky",
-                "team": "TOT",
-                "pos": "GKP",
-                "points": 3,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 305,
-                "name": "Davis",
-                "team": "IPS",
-                "pos": "DEF",
-                "points": 1,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 391,
-                "name": "Gvardiol",
-                "team": "MCI",
-                "pos": "DEF",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 22
+            "diff_points": 22,
+            "chip": null
           },
           "bbbsas": {
             "captain": {
@@ -4462,18 +3546,27 @@
               "team": "MCI",
               "pos": "FWD",
               "points": 0,
-              "starting": true,
+              "playing": true,
               "multiplier": 2,
               "haul": 0
             },
             "differentials": [
+              {
+                "id": 165,
+                "name": "João Pedro",
+                "team": "CHE",
+                "pos": "FWD",
+                "points": 12,
+                "playing": true,
+                "multiplier": 1
+              },
               {
                 "id": 1,
                 "name": "Raya",
                 "team": "ARS",
                 "pos": "GKP",
                 "points": 3,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4482,7 +3575,7 @@
                 "team": "ARS",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4491,7 +3584,7 @@
                 "team": "FUL",
                 "pos": "MID",
                 "points": 2,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
               },
               {
@@ -4500,47 +3593,12 @@
                 "team": "HUL",
                 "pos": "DEF",
                 "points": 0,
-                "starting": true,
+                "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 332,
-                "name": "Justin",
-                "team": "LEE",
-                "pos": "DEF",
-                "points": 6,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 112,
-                "name": "Van Hecke",
-                "team": "TOT",
-                "pos": "DEF",
-                "points": 3,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 346,
-                "name": "Calvert-Lewin",
-                "team": "LEE",
-                "pos": "FWD",
-                "points": 2,
-                "starting": false,
-                "multiplier": 0
-              },
-              {
-                "id": 251,
-                "name": "Lecomte",
-                "team": "FUL",
-                "pos": "GKP",
-                "points": 0,
-                "starting": false,
-                "multiplier": 0
               }
             ],
-            "diff_points": 7
+            "diff_points": 19,
+            "chip": "wildcard"
           }
         }
       }

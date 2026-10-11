@@ -40,7 +40,17 @@ jobs:
         env:
           SITE_URL: https://totte155.github.io/fpl-geese-bbbsas/
         run: python notify.py
-
+      
+      - name: Check secrets are visible
+        env:
+          U: ${{ secrets.MAIL_USERNAME }}
+          P: ${{ secrets.MAIL_PASSWORD }}
+          T: ${{ secrets.MAIL_TO }}
+        run: |
+          echo "MAIL_USERNAME length: ${#U}"
+          echo "MAIL_PASSWORD length: ${#P}"
+          echo "MAIL_TO length: ${#T}"
+      
       - name: Email the group
         if: steps.build.outputs.send == 'true'
         uses: dawidd6/action-send-mail@v3

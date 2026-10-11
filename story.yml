@@ -56,16 +56,17 @@ jobs:
           html_body: file://${{ steps.build.outputs.body_file }}
           convert_markdown: false
 
-      - name: Commit the story
-        if: steps.build.outputs.send == 'true'
+      # Runs every time, not only when an email goes out: the archive page is
+      # rebuilt on each run so it stays current as gameweeks finish.
+      - name: Commit the story and archive
         run: |
           git config user.name  "fpl-bot"
           git config user.email "fpl-bot@users.noreply.github.com"
-          git add stories
+          git add stories stories.html
           if git diff --staged --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "${{ steps.build.outputs.kind }} GW${{ steps.build.outputs.gw }}"
+            git commit -m "Season story update"
             # The data workflow commits on its own schedule, so rebase rather
             # than fail if it pushed while this job was running.
             git pull --rebase --autostash

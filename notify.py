@@ -93,6 +93,15 @@ def emit(**kw):
 
 def main():
     d = S.load()
+    site = os.environ.get("SITE_URL", "")
+
+    # The archive is rebuilt from data.json every run, not only when something
+    # is emailed. That keeps it current as gameweeks finish, and means past
+    # weeks appear on their own without any backfill step.
+    with open("stories.html", "w", encoding="utf-8") as fh:
+        fh.write(S.build_archive(d, site))
+    print(f"Archive rebuilt: {len(S.completed(d))} gameweek(s).")
+
     sent = load_sent()
     kind, gw = decide(d, sent)
 
@@ -108,7 +117,6 @@ def main():
         return 0
 
     os.makedirs(S.OUT_DIR, exist_ok=True)
-    site = os.environ.get("SITE_URL", "")
     text = S.to_text(built)
 
     # Written to fixed names so the workflow can attach them, and so the latest

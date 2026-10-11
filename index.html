@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1220">
-<title>FPL Geese vs BBBSAS — H2H 2026/27</title>
+<title>FPL Geese vs Big Brexit Sauce — H2H 2026/27</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -118,7 +118,15 @@
   .chev{color:var(--muted); font-size:11px; margin-left:2px; flex:0 0 auto}
 
   /* Team links (bottom) */
-  .teamlinks{margin-top:30px; border:1px solid var(--line); border-radius:14px;
+  /* Link through to the season archive */
+  .archivelink{margin-top:30px}
+  .archivelink a{display:flex; align-items:center; justify-content:space-between;
+    gap:10px; border:1px solid var(--line); border-radius:14px; background:var(--panel-2);
+    padding:14px 16px; text-decoration:none; color:var(--text); font-size:14.5px;
+    font-weight:500; transition:border-color .15s ease, background .15s ease}
+  .archivelink a:hover{border-color:var(--geese); background:#16233a}
+
+  .teamlinks{margin-top:12px; border:1px solid var(--line); border-radius:14px;
     background:var(--panel-2); padding:14px 16px}
   .teamlinks .tl-head{font-family:var(--display); font-weight:700; font-size:13px;
     letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px}
@@ -289,7 +297,7 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow"><b>FPL Geese</b> vs <b>BBBSAS</b> · H2H 2026/27</div>
+    <div class="eyebrow"><b>FPL Geese</b> vs <b>Big Brexit Sauce</b> · H2H 2026/27</div>
     <div class="stamp">
       <span id="stamp-txt"></span>
       <button class="refresh" id="refresh" title="Fetch the latest saved scores">
@@ -305,6 +313,10 @@
   <div id="banner"></div>
   <div id="app"><div class="empty"><h3>Loading…</h3><p>Fetching the latest league data.</p></div></div>
 
+  <div class="archivelink">
+    <a href="stories.html">Season Story &mdash; every gameweek written up &rsaquo;</a>
+  </div>
+
   <div class="teamlinks" id="teamlinks"></div>
 
   <footer>
@@ -319,6 +331,7 @@
 
 <script>
 const EN_DASH = "\u2013";
+const BBB = "Big Brexit Sauce";   // team display name
 const q = (s) => document.querySelector(s);
 
 let LAST_DATA = null;
@@ -356,7 +369,7 @@ function fmtStamp(iso){ return relTime(iso); }
 
 function shortName(teamName, data){
   if(teamName === data.teams.geese.name) return "FPL Geese";
-  if(teamName === data.teams.bbbsas.name) return data.teams.bbbsas.short || "BBBSAS";
+  if(teamName === data.teams.bbbsas.name) return BBB;
   return teamName;
 }
 
@@ -415,7 +428,7 @@ function render(data){
           <span class="caplabel">H2H points</span>
         </div>
         <div class="side bbbsas">
-          <span class="badge">BBBSAS<span class="dot" style="background:var(--bbbsas)"></span></span>
+          <span class="badge">${BBB}<span class="dot" style="background:var(--bbbsas)"></span></span>
           <span class="roster">${data.teams.bbbsas.players.join(" · ")}</span>
           <span class="tally">${b}</span>
           <span class="caplabel">H2H points</span>
@@ -443,7 +456,7 @@ function render(data){
     + `<div class="chartcard">
          <div class="chart-legend">
            <span><i style="background:var(--geese)"></i>FPL Geese</span>
-           <span><i style="background:var(--bbbsas)"></i>BBBSAS</span>
+           <span><i style="background:var(--bbbsas)"></i>${BBB}</span>
          </div>${chart(data)}
        </div>`
     + `<div class="sechead"><h2>Player records</h2>
@@ -495,7 +508,7 @@ function recordsBlock(data){
   };
   return `<div class="rec-grid">
     ${panel(r.geese, "FPL Geese", "var(--geese)")}
-    ${panel(r.bbbsas, "BBBSAS", "var(--bbbsas)")}
+    ${panel(r.bbbsas, BBB, "var(--bbbsas)")}
   </div>`;
 }
 
@@ -592,7 +605,7 @@ function gwCard(data, d){
   const geeseWin = d.winner === data.teams.geese.name;
   const bbbsasWin = d.winner === data.teams.bbbsas.name;
   const col = geeseWin ? "var(--geese)" : bbbsasWin ? "var(--bbbsas)" : "var(--draw)";
-  const label = geeseWin ? "FPL Geese" : bbbsasWin ? "BBBSAS" : "Draw";
+  const label = geeseWin ? "FPL Geese" : bbbsasWin ? BBB : "Draw";
   const fixtures = d.fixtures.map(f=>{
     const gw2 = f.winner === data.teams.geese.name, bw = f.winner === data.teams.bbbsas.name;
     const scCls = gw2 ? "g" : bw ? "b" : "d";

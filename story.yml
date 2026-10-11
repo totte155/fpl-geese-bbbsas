@@ -1,0 +1,73 @@
+name: Weekly story
+
+# Polls every 15 minutes. notify.py decides whether anything is due, so most
+# runs do nothing and exit in a second.
+#
+# The Teamsheet is timed to the first kick-off of the gameweek, read live from
+# the FPL fixtures API by update_data.py. Polling beats a fixed cron here:
+# Premier League kick-off times move for television, rounds drift around
+# international breaks, and GitHub's scheduler is best-effort anyway. Each
+# gameweek still gets exactly one Teamsheet and one Full Time, tracked in
+# stories/sent.json.
+#
+# This workflow makes no FPL API calls of its own — it reads the data.json
+# that "Update FPL H2H data" already keeps current.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:              # "Run workflow" to send immediately
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-story
+  cancel-in-progress: false
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Decide and build
+        id: build
+        env:
+          SITE_URL: https://totte155.github.io/fpl-geese-bbbsas/
+        run: python notify.py
+
+      - name: Email the group
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: ${{ steps.build.outputs.subject }}
+          to: ${{ secrets.MAIL_TO }}
+          from: FPL H2H <${{ secrets.MAIL_USERNAME }}>
+          html_body: file://${{ steps.build.outputs.body_file }}
+          convert_markdown: false
+
+      - name: Commit the story
+        if: steps.build.outputs.send == 'true'
+        run: |
+          git config user.name  "fpl-bot"
+          git config user.email "fpl-bot@users.noreply.github.com"
+          git add stories
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "${{ steps.build.outputs.kind }} GW${{ steps.build.outputs.gw }}"
+            # The data workflow commits on its own schedule, so rebase rather
+            # than fail if it pushed while this job was running.
+            git pull --rebase --autostash
+            git push
+          fi

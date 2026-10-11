@@ -99,6 +99,7 @@ API_BOOTSTRAP = "https://fantasy.premierleague.com/api/bootstrap-static/"
 API_HISTORY = "https://fantasy.premierleague.com/api/entry/{entry_id}/history/"
 API_LIVE = "https://fantasy.premierleague.com/api/event/{gw}/live/"
 API_PICKS = "https://fantasy.premierleague.com/api/entry/{entry_id}/event/{gw}/picks/"
+API_FIXTURES = "https://fantasy.premierleague.com/api/fixtures/?event={gw}"
 HEADERS = {"User-Agent": "fpl-h2h-tracker/1.0"}
 TIMEOUT = 20
 
@@ -176,7 +177,15 @@ def manager_squad(entry_id, gw):
         data = _get(API_PICKS.format(entry_id=entry_id, gw=gw))
     except Exception:  # noqa: BLE001
         return None
-    return {"picks": data.get("picks", []), "chip": data.get("active_chip")}
+    hist = data.get("entry_history", {}) or {}
+    return {
+        "picks": data.get("picks", []),
+        "chip": data.get("active_chip"),
+        # Used by the weekly story: points left unused on the bench, and the
+        # cost of any extra transfers taken this gameweek.
+        "bench_points": hist.get("points_on_bench", 0),
+        "hit": hist.get("event_transfers_cost", 0),
+    }
 
 
 def _squad_view(squad_data, live_map, meta):
@@ -243,9 +252,11 @@ def fixture_detail(geese_player, bbbsas_player, gw, live_map):
         "shared_count": len(shared),
         "same_captain": bool(gcap and bcap and gcap["id"] == bcap["id"]),
         "geese": {"captain": gcap, "differentials": g_only,
-                  "diff_points": g_swing, "chip": gchip},
+                  "diff_points": g_swing, "chip": gchip,
+                  "bench_points": gp.get("bench_points", 0), "hit": gp.get("hit", 0)},
         "bbbsas": {"captain": bcap, "differentials": b_only,
-                   "diff_points": b_swing, "chip": bchip},
+                   "diff_points": b_swing, "chip": bchip,
+                   "bench_points": bp.get("bench_points", 0), "hit": bp.get("hit", 0)},
     }
 
 
@@ -304,6 +315,40 @@ def manager_live_score(entry_id, gw, live_map):
     return total
 
 
+# Approximate first-kickoff times, used ONLY if the fixtures API can't be
+# reached. Premier League rounds to the end of November 2026 all fall on a
+# Saturday, with no midweek round until 2 December. Exact kick-off times are
+# confirmed by TV selection a few weeks ahead, so these are the earliest
+# plausible slot rather than gospel — the API value always wins.
+FIRST_KICKOFF_FALLBACK = {
+    6:  "2026-10-10T11:30:00Z",
+    7:  "2026-10-17T11:30:00Z",
+    8:  "2026-10-24T11:30:00Z",
+    9:  "2026-10-31T12:30:00Z",   # clocks go back 25 Oct, so UK time is UTC
+    10: "2026-11-07T12:30:00Z",
+    11: "2026-11-21T12:30:00Z",   # international break 9–17 Nov
+    12: "2026-11-28T12:30:00Z",
+}
+
+
+@lru_cache(maxsize=None)
+def first_kickoff(gw):
+    """When the gameweek's earliest match kicks off, as an ISO-8601 UTC string.
+
+    This is what the weekly Teamsheet is timed against. Read live from the
+    fixtures API so it stays correct when matches are moved for television.
+    """
+    try:
+        data = _get(API_FIXTURES.format(gw=gw))
+        times = [f["kickoff_time"] for f in data if f.get("kickoff_time")]
+        if times:
+            return min(times)
+    except Exception as exc:  # noqa: BLE001
+        print(f"WARN: no fixture times for GW{gw} ({exc}); using fallback.",
+              file=sys.stderr)
+    return FIRST_KICKOFF_FALLBACK.get(gw)
+
+
 def build_live_block():
     """The current-gameweek matchup with provisional live scores.
 
@@ -347,6 +392,7 @@ def build_live_block():
     return {
         "gw": gw,
         "status": status,  # 'live' or 'upcoming'
+        "first_kickoff": first_kickoff(gw),
         "fixtures": fixtures,
         "provisional_geese": geese_pts,
         "provisional_bbbsas": bbbsas_pts,
@@ -380,7 +426,7 @@ def _is_current_schema(detail):
     """
     for side in ("geese", "bbbsas"):
         block = detail.get(side) or {}
-        if "chip" not in block:
+        if "chip" not in block or "bench_points" not in block:
             return False
         for player in block.get("differentials", []):
             if "playing" not in player:

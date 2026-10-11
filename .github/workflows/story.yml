@@ -1,0 +1,57 @@
+name: Weekly story
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-story
+  cancel-in-progress: false
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Decide and build
+        id: build
+        env:
+          SITE_URL: https://totte155.github.io/fpl-geese-bbbsas/
+        run: python notify.py
+
+      - name: Email the group
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: ${{ steps.build.outputs.subject }}
+          to: ${{ secrets.MAIL_TO }}
+          from: FPL H2H <${{ secrets.MAIL_USERNAME }}>
+          html_body: file://${{ steps.build.outputs.body_file }}
+          convert_markdown: false
+
+      - name: Commit the story and archive
+        run: |
+          git config user.name  "fpl-bot"
+          git config user.email "fpl-bot@users.noreply.github.com"
+          git add stories stories.html
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Season story update"
+            git pull --rebase --autostash
+            git push
+          fi

@@ -23,7 +23,7 @@ import requests
 
 TEAM_GEESE = "FPL Geese"
 TEAM_BBBSAS = "Big Ben Brexit Sauce Appreciation Society"
-TEAM_BBBSAS_SHORT = "BBBSAS"
+TEAM_BBBSAS_SHORT = "Big Brexit Sauce"
 
 # Team colours (kept in sync with the dashboard).
 TEAM_COLOURS = {
@@ -166,7 +166,7 @@ def element_meta():
 
 
 def manager_squad(entry_id, gw):
-    """List of picks for a manager in a gameweek, or None if unavailable.
+    """Picks and active chip for a manager in a gameweek, or None.
 
     Picks only exist once the gameweek deadline has passed.
     """
@@ -176,13 +176,22 @@ def manager_squad(entry_id, gw):
         data = _get(API_PICKS.format(entry_id=entry_id, gw=gw))
     except Exception:  # noqa: BLE001
         return None
-    return data.get("picks", [])
+    return {"picks": data.get("picks", []), "chip": data.get("active_chip")}
 
 
-def _squad_view(picks, live_map, meta):
-    """Turn raw picks into {element: info} plus the captain's details."""
+def _squad_view(squad_data, live_map, meta):
+    """Turn raw picks into {element: info} plus the captain's details.
+
+    A player counts as "playing" if their points count towards the manager's
+    score this gameweek — i.e. they're in the starting XI, or the manager has
+    played their Bench Boost (in which case all 15 count).
+    """
+    picks = (squad_data or {}).get("picks", [])
+    chip = (squad_data or {}).get("chip")
+    bench_boost = chip == "bboost"
+
     squad, captain = {}, None
-    for p in picks or []:
+    for p in picks:
         eid = p.get("element")
         info = meta.get(eid, {"name": f"#{eid}", "team": "", "pos": ""})
         mult = p.get("multiplier", 0)
@@ -192,13 +201,13 @@ def _squad_view(picks, live_map, meta):
             "team": info["team"],
             "pos": info["pos"],
             "points": live_map.get(eid, 0),
-            "starting": mult > 0,
+            "playing": mult > 0 or bench_boost,
             "multiplier": mult,
         }
         squad[eid] = entry
         if p.get("is_captain"):
             captain = dict(entry, haul=entry["points"] * max(mult, 1))
-    return squad, captain
+    return squad, captain, chip
 
 
 def fixture_detail(geese_player, bbbsas_player, gw, live_map):
@@ -211,17 +220,21 @@ def fixture_detail(geese_player, bbbsas_player, gw, live_map):
     if gp is None or bp is None:
         return None
 
-    gsq, gcap = _squad_view(gp, live_map, meta)
-    bsq, bcap = _squad_view(bp, live_map, meta)
+    gsq, gcap, gchip = _squad_view(gp, live_map, meta)
+    bsq, bcap, bchip = _squad_view(bp, live_map, meta)
 
-    shared = set(gsq) & set(bsq)
-    g_only = [gsq[e] for e in gsq if e not in bsq]
-    b_only = [bsq[e] for e in bsq if e not in gsq]
+    # Compare only players whose points actually count this gameweek. A bench
+    # player is irrelevant to the H2H result unless Bench Boost is active, in
+    # which case _squad_view has already marked them as playing.
+    g_play = {e: p for e, p in gsq.items() if p["playing"]}
+    b_play = {e: p for e, p in bsq.items() if p["playing"]}
 
-    # Starters first, then by points scored.
-    sort_key = lambda p: (not p["starting"], -p["points"])  # noqa: E731
-    g_only.sort(key=sort_key)
-    b_only.sort(key=sort_key)
+    shared = set(g_play) & set(b_play)
+    g_only = [g_play[e] for e in g_play if e not in b_play]
+    b_only = [b_play[e] for e in b_play if e not in g_play]
+
+    g_only.sort(key=lambda p: -p["points"])
+    b_only.sort(key=lambda p: -p["points"])
 
     g_swing = sum(p["points"] * p["multiplier"] for p in g_only)
     b_swing = sum(p["points"] * p["multiplier"] for p in b_only)
@@ -229,8 +242,10 @@ def fixture_detail(geese_player, bbbsas_player, gw, live_map):
     return {
         "shared_count": len(shared),
         "same_captain": bool(gcap and bcap and gcap["id"] == bcap["id"]),
-        "geese": {"captain": gcap, "differentials": g_only, "diff_points": g_swing},
-        "bbbsas": {"captain": bcap, "differentials": b_only, "diff_points": b_swing},
+        "geese": {"captain": gcap, "differentials": g_only,
+                  "diff_points": g_swing, "chip": gchip},
+        "bbbsas": {"captain": bcap, "differentials": b_only,
+                   "diff_points": b_swing, "chip": bchip},
     }
 
 
@@ -350,9 +365,27 @@ def previous_detail_cache():
     cache = {}
     for gwrow in old.get("gameweeks", []):
         for fx in gwrow.get("fixtures", []):
-            if fx.get("detail"):
-                cache[(gwrow["gw"], fx["geese_player"], fx["bbbsas_player"])] = fx["detail"]
+            detail = fx.get("detail")
+            if detail and _is_current_schema(detail):
+                cache[(gwrow["gw"], fx["geese_player"], fx["bbbsas_player"])] = detail
     return cache
+
+
+def _is_current_schema(detail):
+    """Reject cached detail written by an older version of this script.
+
+    Early versions listed bench players in the differentials and marked them
+    with a "starting" flag. Those entries must be recomputed rather than
+    reused, otherwise old gameweeks keep showing bench players forever.
+    """
+    for side in ("geese", "bbbsas"):
+        block = detail.get(side) or {}
+        if "chip" not in block:
+            return False
+        for player in block.get("differentials", []):
+            if "playing" not in player:
+                return False
+    return True
 
 
 # ---------------------------------------------------------------------------

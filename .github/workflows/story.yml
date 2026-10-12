@@ -1,5 +1,8 @@
 name: Weekly story
 
+# Polls every 15 minutes so the Teamsheet can go out at the gameweek's first
+# kick-off. notify.py decides whether anything is due, so most runs do nothing.
+
 on:
   schedule:
     - cron: "*/15 * * * *"
@@ -28,6 +31,30 @@ jobs:
           SITE_URL: https://totte155.github.io/fpl-geese-bbbsas/
         run: python notify.py
 
+      # Turns "At least one of 'to', 'cc' or 'bcc' must be specified" into a
+      # message that names the missing secret. Prints lengths only, never
+      # values, so nothing sensitive reaches the public log.
+      - name: Check mail secrets are visible
+        if: steps.build.outputs.send == 'true'
+        env:
+          U: ${{ secrets.MAIL_USERNAME }}
+          P: ${{ secrets.MAIL_PASSWORD }}
+          T: ${{ secrets.MAIL_TO }}
+        run: |
+          echo "MAIL_USERNAME length: ${#U}"
+          echo "MAIL_PASSWORD length: ${#P}"
+          echo "MAIL_TO       length: ${#T}"
+          missing=""
+          [ -z "$U" ] && missing="$missing MAIL_USERNAME"
+          [ -z "$P" ] && missing="$missing MAIL_PASSWORD"
+          [ -z "$T" ] && missing="$missing MAIL_TO"
+          if [ -n "$missing" ]; then
+            echo "::error::Not reaching this workflow:$missing — add them under"\
+                 "Settings > Secrets and variables > Actions > Repository secrets."
+            exit 1
+          fi
+          echo "All three secrets are visible to the workflow."
+
       - name: Email the group
         if: steps.build.outputs.send == 'true'
         uses: dawidd6/action-send-mail@v3
@@ -43,7 +70,10 @@ jobs:
           html_body: file://${{ steps.build.outputs.body_file }}
           convert_markdown: false
 
+      # always() so the archive page still updates even when the email fails —
+      # otherwise a mail problem also freezes the website.
       - name: Commit the story and archive
+        if: always()
         run: |
           git config user.name  "fpl-bot"
           git config user.email "fpl-bot@users.noreply.github.com"

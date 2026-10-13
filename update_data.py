@@ -349,6 +349,23 @@ def first_kickoff(gw):
     return FIRST_KICKOFF_FALLBACK.get(gw)
 
 
+@lru_cache(maxsize=None)
+def last_kickoff(gw):
+    """When the gameweek's final match kicks off, as an ISO-8601 UTC string.
+
+    The Full Time write-up is held until well after this, so the report never
+    lands while anyone still has players on the pitch.
+    """
+    try:
+        data = _get(API_FIXTURES.format(gw=gw))
+        times = [f["kickoff_time"] for f in data if f.get("kickoff_time")]
+        if times:
+            return max(times)
+    except Exception:  # noqa: BLE001
+        pass
+    return None
+
+
 def build_live_block():
     """The current-gameweek matchup with provisional live scores.
 
@@ -500,6 +517,7 @@ def build():
             "winner": gw_winner,
             "cum_geese": cum_geese,
             "cum_bbbsas": cum_bbbsas,
+            "last_kickoff": last_kickoff(gw),
             "fixtures": fixtures,
         })
 

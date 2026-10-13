@@ -16,7 +16,7 @@ week that just finished is the bigger story.
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import story as S
 
@@ -63,13 +63,36 @@ def kicked_off(live):
     return datetime.now(timezone.utc) >= ko
 
 
+# The Full Time write-up is held until this long after the gameweek's final
+# match kicks off: 2 hours of football, then a 12-hour wait.
+REPORT_HOLD_HOURS = 14
+
+
+def settled(gw_row):
+    """True once enough time has passed since the gameweek's last match.
+
+    FPL's own verification is usually the slower gate, so this rarely bites —
+    it's here so the report can never arrive while the week still feels live.
+    """
+    when = gw_row.get("last_kickoff")
+    if not when:
+        return True
+    try:
+        ko = datetime.fromisoformat(when.replace("Z", "+00:00"))
+        if ko.tzinfo is None:
+            ko = ko.replace(tzinfo=timezone.utc)
+    except Exception:  # noqa: BLE001
+        return True
+    return datetime.now(timezone.utc) >= ko + timedelta(hours=REPORT_HOLD_HOURS)
+
+
 def decide(d, sent):
     """Return (kind, gw) for the story that is due, or (None, None)."""
     gws = S.completed(d)
     if gws:
-        latest = gws[-1]["gw"]
-        if latest not in sent.get("report", []):
-            return "report", latest
+        latest = gws[-1]
+        if latest["gw"] not in sent.get("report", []) and settled(latest):
+            return "report", latest["gw"]
 
     live = d.get("live")
     if live and picks_are_public(live) and kicked_off(live):

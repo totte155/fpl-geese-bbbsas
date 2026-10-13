@@ -5,7 +5,15 @@ name: Weekly story
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Two emails per gameweek, no more — notify.py decides. These are just the
+    # checks that catch the right moment.
+    #
+    # Kick-off times move week to week, so a fixed cron can't target them; this
+    # polls and fires on the first check at or after the first whistle. Every
+    # 20 min from 10:00–22:59 UTC covers every Premier League kick-off slot and
+    # the window FPL verifies results in. Hourly overnight is just a safety net.
+    - cron: "*/20 10-22 * * *"
+    - cron: "0 23,0-9 * * *"
   workflow_dispatch:
 
 permissions:

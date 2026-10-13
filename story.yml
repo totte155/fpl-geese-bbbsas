@@ -25,6 +25,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Chromium renders the weekly graphic. Only installed when a story is
+      # actually due — most runs skip this and finish in a couple of seconds.
+      - name: Is anything due?
+        id: due
+        run: python notify.py --due
+
+      - name: Install Chromium for the graphic
+        if: steps.due.outputs.due == 'true'
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
       - name: Decide and build
         id: build
         env:
@@ -69,6 +81,16 @@ jobs:
           from: FPL H2H <${{ secrets.MAIL_USERNAME }}>
           html_body: file://${{ steps.build.outputs.body_file }}
           convert_markdown: false
+          # The graphic rides along as an attachment, so it can be saved and
+          # forwarded straight into WhatsApp.
+          attachments: ${{ steps.build.outputs.image }}
+
+      # Only once the email has genuinely gone out. Keeping this separate from
+      # the build step means a mail failure leaves the week un-ticked, so it is
+      # retried on the next run rather than silently skipped.
+      - name: Record as sent
+        if: success() && steps.build.outputs.send == 'true'
+        run: python notify.py --mark "${{ steps.build.outputs.kind }}" "${{ steps.build.outputs.gw }}"
 
       # always() so the archive page still updates even when the email fails —
       # otherwise a mail problem also freezes the website.

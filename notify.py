@@ -91,7 +91,31 @@ def emit(**kw):
             fh.write(f"{k}={v}\n")
 
 
+def mark(kind, gw):
+    """Record that a story was delivered. Called only after a successful send."""
+    sent = load_sent()
+    lst = sent.setdefault(kind, [])
+    if gw not in lst:
+        lst.append(gw)
+        save_sent(sent)
+        print(f"Marked {kind} GW{gw} as sent.")
+    else:
+        print(f"{kind} GW{gw} was already marked.")
+    return 0
+
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--mark":
+        return mark(sys.argv[2], int(sys.argv[3]))
+
+    # A cheap dry run: is a story due? Lets the workflow skip installing
+    # Chromium on the ~95% of runs where nothing is happening.
+    if len(sys.argv) > 1 and sys.argv[1] == "--due":
+        kind, _ = decide(S.load(), load_sent())
+        emit(due="true" if kind else "false")
+        print(f"Due: {kind or 'nothing'}")
+        return 0
+
     d = S.load()
     site = os.environ.get("SITE_URL", "")
 
@@ -127,12 +151,25 @@ def main():
     with open(os.path.join(S.OUT_DIR, f"{kind}.html"), "w", encoding="utf-8") as fh:
         fh.write(S.to_html(built, site))
 
-    sent.setdefault(kind, []).append(built["gw"])
-    save_sent(sent)
+    # The matchday / teamsheet graphic. Drawn here so it can be attached to the
+    # email and committed alongside the text. Failing to draw it must never stop
+    # the story going out, so this is best-effort.
+    image = ""
+    try:
+        import graphic
+        image = graphic.build(kind, built["gw"]) or ""
+        if image:
+            print(f"Graphic: {image}")
+    except Exception as exc:  # noqa: BLE001
+        print(f"WARN: graphic not drawn ({exc}).", file=sys.stderr)
 
+    # NOT marked as sent here. The workflow calls `notify.py --mark <kind> <gw>`
+    # only after the email has actually gone out, so a mail failure can never
+    # silently tick a week off and skip it forever.
     print(text)
     emit(send="true", kind=kind, gw=str(built["gw"]),
-         subject=built["subject"], body_file=f"{S.OUT_DIR}/{kind}.html")
+         subject=built["subject"], body_file=f"{S.OUT_DIR}/{kind}.html",
+         image=image)
     return 0
 
 

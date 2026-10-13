@@ -511,6 +511,11 @@ def build_archive(d, site_url=""):
         # The first two lines are the heading and scoreline, already in the
         # card header — don't repeat them in the body.
         body = lines_to_html(story["lines"], skip_first=2)
+        # Show the matchday graphic above the write-up when one exists.
+        img = os.path.join(OUT_DIR, f"matchday_gw{gw['gw']}.png")
+        if os.path.exists(img):
+            body = (f'<img class="gwimg" src="{img}" '
+                    f'alt="Gameweek {gw["gw"]} matchday graphic" loading="lazy">') + body
         won = gw["winner"]
         colour = ("var(--geese)" if won == team_names(d)[0]
                   else "var(--bbbsas)" if won == team_names(d)[1] else "var(--draw)")
@@ -585,6 +590,8 @@ def build_archive(d, site_url=""):
   .chev{{color:var(--muted);transition:transform .15s ease}}
   details[open] .chev{{transform:rotate(90deg)}}
   .gwbody{{padding:6px 18px 18px}}
+  .gwimg{{display:block;width:100%;height:auto;border:1px solid var(--line);
+    border-radius:12px;margin:10px 0 16px}}
   .empty{{margin-top:16px;border:1px dashed var(--line);border-radius:14px;
     background:var(--panel-2);padding:34px 24px;text-align:center;color:var(--muted)}}
   .empty h3{{font-family:var(--display);font-weight:700;color:var(--text);

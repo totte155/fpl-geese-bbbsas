@@ -17,11 +17,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - run: pip install requests
-      - run: python update_data.py
+
+      - name: Build data.json
+        run: python update_data.py
+
+      # The weekly story workflow pushes to the same branch, so a plain push
+      # gets rejected whenever the two overlap — which silently freezes the
+      # data. Rebase onto whatever landed first, and retry a couple of times.
       - name: Commit if changed
         run: |
           git config user.name  "fpl-bot"
@@ -29,7 +37,17 @@ jobs:
           git add data.json
           if git diff --staged --quiet; then
             echo "No change."
-          else
-            git commit -m "Update H2H data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
-            git push
+            exit 0
           fi
+          git commit -m "Update H2H data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing onto origin/main and retrying."
+            git pull --rebase --autostash origin main
+            sleep 5
+          done
+          echo "::error::Could not push after 3 attempts."
+          exit 1

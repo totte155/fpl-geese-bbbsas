@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:02:21+00:00",
+  "generated_at": "2026-10-17T20:31:37+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3785,7 +3785,7 @@
             ],
             "diff_points": 2,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 3,
             "hit": 0
           },
           "bbbsas": {
@@ -3848,7 +3848,7 @@
             ],
             "diff_points": 4,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 6,
             "hit": 0
           }
         }
@@ -3931,7 +3931,7 @@
             ],
             "diff_points": 3,
             "chip": "3xc",
-            "bench_points": 0,
+            "bench_points": 8,
             "hit": 0
           },
           "bbbsas": {
@@ -4003,7 +4003,7 @@
             ],
             "diff_points": 4,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 3,
             "hit": 0
           }
         }
@@ -4086,7 +4086,7 @@
             ],
             "diff_points": 2,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 4,
             "hit": 0
           }
         }
@@ -4142,7 +4142,7 @@
             ],
             "diff_points": 0,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 2,
             "hit": 0
           },
           "bbbsas": {
@@ -4187,7 +4187,7 @@
             ],
             "diff_points": 0,
             "chip": null,
-            "bench_points": 0,
+            "bench_points": 6,
             "hit": 0
           }
         }

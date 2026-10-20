@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T06:13:08+00:00",
+  "generated_at": "2026-10-20T11:34:05+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -3992,9 +3992,9 @@
                 "multiplier": 1
               },
               {
-                "id": 480,
-                "name": "Gibbs-White",
-                "team": "NFO",
+                "id": 94,
+                "name": "Schade",
+                "team": "BRE",
                 "pos": "MID",
                 "points": 0,
                 "playing": true,
@@ -4010,10 +4010,10 @@
       },
       {
         "geese_player": "Dorian",
-        "geese_score": 71,
+        "geese_score": 74,
         "bbbsas_player": "Tommi",
         "bbbsas_score": 74,
-        "leader": "Big Ben Brexit Sauce Appreciation Society",
+        "leader": "Level",
         "detail": {
           "shared_count": 9,
           "same_captain": true,
@@ -4030,6 +4030,15 @@
             },
             "differentials": [
               {
+                "id": 173,
+                "name": "Thomas",
+                "team": "COV",
+                "pos": "DEF",
+                "points": 3,
+                "playing": true,
+                "multiplier": 1
+              },
+              {
                 "id": 154,
                 "name": "Palmer",
                 "team": "CHE",
@@ -4037,20 +4046,11 @@
                 "points": 2,
                 "playing": true,
                 "multiplier": 1
-              },
-              {
-                "id": 399,
-                "name": "Cherki",
-                "team": "MCI",
-                "pos": "MID",
-                "points": 0,
-                "playing": true,
-                "multiplier": 1
               }
             ],
-            "diff_points": 2,
+            "diff_points": 5,
             "chip": null,
-            "bench_points": 12,
+            "bench_points": 9,
             "hit": 0
           },
           "bbbsas": {
@@ -4194,7 +4194,7 @@
       }
     ],
     "provisional_geese": 2,
-    "provisional_bbbsas": 2,
-    "provisional_score": "2–2"
+    "provisional_bbbsas": 1,
+    "provisional_score": "2–1"
   }
 }

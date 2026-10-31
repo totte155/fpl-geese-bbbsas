@@ -1,36 +1,36 @@
-*GW8 TEAMSHEET*
-FPL Geese 14–12 Big Brexit Sauce
+*GW9 TEAMSHEET*
+FPL Geese 16–14 Big Brexit Sauce
 FPL Geese lead by 2.
 
-*Max vs Tommi*
-  H2H: Max leads 1–0
-  Form: Max WWW / Tommi LLD
+*Max vs Pat*
+  H2H: level 1–1
+  Form: Max WWL / Pat WWL
   C: both on Haaland — cancels out
-  Max only: Verbruggen, Van Hecke, Ajer
-  Tommi only: Gibbs-White, Raya, Justin
+  Max only: Mbeumo, Kinsky, Van Hecke
+  Pat only: Rogers, Palmer, Raya
 
-*Phil vs Pat*
-  H2H: Pat leads 1–0
-  Form: Phil WLW / Pat LWW
-  C: Haaland vs Palmer
-  Phil only: Donnarumma, Konsa, Ødegaard
-  Pat only: Raya, Thomas, Groß
-
-*Dorian vs Tej*
-  H2H: Tej leads 1–0
-  Form: Dorian LLD / Tej LWL
-  C: Haaland vs Palmer
-  Dorian only: Van Hecke, De Cuyper, Cherki
-  Tej only: Konsa, Muharemović, Mbeumo
-
-*Torsten vs Frej*
-  H2H: Frej leads 1–0
-  Form: Torsten WWL / Frej WLL
+*Phil vs Tommi*
+  H2H: Phil leads 1–0 (1 drawn)
+  Form: Phil LWW / Tommi LDW
   C: both on Haaland — cancels out
-  Torsten only: Verbruggen, Konsa, Muharemović
-  Frej only: Raya, Gvardiol, Ajer
+  Phil only: Palmer, Donnarumma, Konsa
+  Tommi only: Mbeumo, Raya, Van Hecke
+
+*Dorian vs Frej*
+  H2H: Frej leads 2–0
+  Form: Dorian LDL / Frej LLL
+  C: both on Haaland — cancels out
+  Dorian only: Calafiori, Van Hecke, Konsa
+  Frej only: Gvardiol, Ajer, Egan
+
+*Torsten vs Tej*
+  H2H: Torsten leads 2–0
+  Form: Torsten WLW / Tej WLW
+  C: both on Haaland — cancels out
+  Torsten only: Kinsky, Davis, Calafiori
+  Tej only: Mbeumo, Raya, Konsa
 
 *FORM WATCH*
-  Max on a 6-week winning run
+  Frej has lost 3 in a row
 
 Good luck. Captains are locked.

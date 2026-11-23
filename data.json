@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T22:12:43+00:00",
+  "generated_at": "2026-11-23T02:43:24+00:00",
   "teams": {
     "geese": {
       "name": "FPL Geese",
@@ -5926,7 +5926,7 @@
             ],
             "diff_points": 12,
             "chip": null,
-            "bench_points": 2,
+            "bench_points": 3,
             "hit": 0
           }
         }
@@ -6175,7 +6175,7 @@
             ],
             "diff_points": 7,
             "chip": null,
-            "bench_points": 8,
+            "bench_points": 10,
             "hit": 0
           },
           "bbbsas": {

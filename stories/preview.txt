@@ -1,39 +1,41 @@
-*GW11 TEAMSHEET*
-FPL Geese 23–15 Big Brexit Sauce
-FPL Geese lead by 8.
+*GW12 TEAMSHEET*
+FPL Geese 26–16 Big Brexit Sauce
+FPL Geese lead by 10.
 
-*Max vs Tej*
-  H2H: Max leads 2–0
-  Form: Max LWW / Tej WLL
-  C: both on Haaland — cancels out
-  Max only: Tavernier, Verbruggen, Mbeumo
-  Tej only: Calvert-Lewin, Palmer, Raya
-
-*Phil vs Frej*
+*Max vs Tommi*
   H2H: level 1–1
-  Form: Phil WLW / Frej LLL
-  C: both on Haaland — cancels out
-  Phil only: Silva, Tavernier, Donnarumma
-  Frej only: Gibbs-White, Raya, Calafiori
+  Form: Max WWW / Tommi WLW
+  C: both on Calvert-Lewin — cancels out
+  Max only: Muharemović, Dewsbury-Hall, Mbeumo
+  Tommi only: Justin, Wirtz, Haaland
 
-*Dorian vs Tommi*
-  H2H: Dorian leads 1–0 (1 drawn)
-  Form: Dorian LWW / Tommi WWL
-  C: both on Haaland — cancels out
-  Dorian only: Palmer, Konsa
-  Tommi only: Calvert-Lewin, Mbeumo
-
-*Torsten vs Pat*
+*Phil vs Pat*
   H2H: level 1–1
-  Form: Torsten WWW / Pat LLL
-  C: both on Haaland — cancels out
-  Torsten only: Kinsky, Barry
-  Pat only: Rogers, Raya
+  Form: Phil LWW / Pat LLL
+  C: B.Fernandes vs Calvert-Lewin
+  Phil only: Donnarumma, Silva, B.Fernandes
+  Pat only: Palmer, Rogers, Raya
+
+*Dorian vs Tej*
+  H2H: Tej leads 2–0
+  Form: Dorian WWL / Tej LLL
+  C: both on Calvert-Lewin — cancels out
+  Dorian only: Raya, Calafiori, Gabriel
+  Tej only: Rogers, Kinsky, Muharemović
+
+*Torsten vs Frej*
+  H2H: level 1–1
+  Form: Torsten WWW / Frej LLL
+  C: De Cuyper vs N.Jackson
+  Torsten only: Verbruggen, Muharemović, Tavernier
+  Frej only: Raya, Justin, Wirtz
 
 *FORM WATCH*
-  Torsten on a 3-week winning run
-  Pat has lost 3 in a row
-  Frej has lost 5 in a row
+  Max on a 3-week winning run
+  Torsten on a 4-week winning run
+  Pat has lost 4 in a row
+  Frej has lost 6 in a row
+  Tej has lost 3 in a row
 
 *PINT DEBT*
   Big Brexit Sauce owe 1 round
